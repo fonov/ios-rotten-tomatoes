@@ -8,19 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+  @State private var isPresent = false
+
+  var body: some View {
+    NavigationSplitView {
+      Reviews()
+        .toolbar {
+          ToolbarItem(placement: .navigationBarTrailing) {
+            Button {
+              isPresent = true
+            } label: {
+              Label("Plus", systemImage: "plus")
+            }
+          }
         }
-        .padding()
-    }
+        .sheet(isPresented: $isPresent) {
+          AddReview()
+        }
+    } detail: {}
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+  static var previews: some View {
+    ContentView()
+  }
 }
