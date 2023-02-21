@@ -20,8 +20,15 @@ struct ReviewsView: View {
       List {
         ForEach(filmReviews) { filmReview in
           HStack {
-            Text(String(filmReview.rating))
-            Text(filmReview.title ?? "")
+            EmojiRatingView(rating: filmReview.rating)
+              .font(.title)
+
+            VStack(alignment: .leading) {
+              Text(filmReview.title ?? "Unknown Title")
+                .font(.headline)
+              Text(filmReview.director ?? "Unknown Director")
+                .foregroundColor(.secondary)
+            }
           }
         }
         .onDelete(perform: delete)

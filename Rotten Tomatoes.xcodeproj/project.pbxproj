@@ -20,6 +20,7 @@
 		A64B332829A3F31C00910648 /* Genres.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B332729A3F31C00910648 /* Genres.swift */; };
 		A64B332D29A3F8AE00910648 /* ReviewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B332C29A3F8AE00910648 /* ReviewsView.swift */; };
 		A64B332F29A4A35400910648 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B332E29A4A35400910648 /* RatingView.swift */; };
+		A64B333129A4AA8600910648 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B333029A4AA8600910648 /* EmojiRatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		A64B332729A3F31C00910648 /* Genres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genres.swift; sourceTree = "<group>"; };
 		A64B332C29A3F8AE00910648 /* ReviewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsView.swift; sourceTree = "<group>"; };
 		A64B332E29A4A35400910648 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		A64B333029A4AA8600910648 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				A64B332229A35C1F00910648 /* AddReviewView.swift */,
 				A64B332C29A3F8AE00910648 /* ReviewsView.swift */,
 				A64B332E29A4A35400910648 /* RatingView.swift */,
+				A64B333029A4AA8600910648 /* EmojiRatingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A64B32F629A3580A00910648 /* ContentView.swift in Sources */,
+				A64B333129A4AA8600910648 /* EmojiRatingView.swift in Sources */,
 				A64B332829A3F31C00910648 /* Genres.swift in Sources */,
 				A64B332F29A4A35400910648 /* RatingView.swift in Sources */,
 				A64B332329A35C1F00910648 /* AddReviewView.swift in Sources */,
