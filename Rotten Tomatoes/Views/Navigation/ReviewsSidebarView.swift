@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ReviewsSidebar: View {
+struct ReviewsSidebarView: View {
   @Environment(\.managedObjectContext) var moc
 
   @State private var showingAddScreen = false
@@ -37,6 +37,9 @@ struct ReviewsSidebar: View {
     }
     .navigationTitle("Rotten Tomatoes")
     .toolbar {
+      ToolbarItem(placement: .navigationBarLeading) {
+        EditButton()
+      }
       ToolbarItem(placement: .navigationBarTrailing) {
         Button {
           showingAddScreen.toggle()

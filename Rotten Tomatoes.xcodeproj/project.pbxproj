@@ -18,7 +18,7 @@
 		A64B332129A3595D00910648 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B332029A3595D00910648 /* DataController.swift */; };
 		A64B332329A35C1F00910648 /* AddReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B332229A35C1F00910648 /* AddReviewView.swift */; };
 		A64B332829A3F31C00910648 /* Genres.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B332729A3F31C00910648 /* Genres.swift */; };
-		A64B332D29A3F8AE00910648 /* ReviewsSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B332C29A3F8AE00910648 /* ReviewsSidebar.swift */; };
+		A64B332D29A3F8AE00910648 /* ReviewsSidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B332C29A3F8AE00910648 /* ReviewsSidebarView.swift */; };
 		A64B332F29A4A35400910648 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B332E29A4A35400910648 /* RatingView.swift */; };
 		A64B333129A4AA8600910648 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B333029A4AA8600910648 /* EmojiRatingView.swift */; };
 		A64B333329A4B00600910648 /* ReviewDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B333229A4B00600910648 /* ReviewDetailView.swift */; };
@@ -56,7 +56,7 @@
 		A64B332029A3595D00910648 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		A64B332229A35C1F00910648 /* AddReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewView.swift; sourceTree = "<group>"; };
 		A64B332729A3F31C00910648 /* Genres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genres.swift; sourceTree = "<group>"; };
-		A64B332C29A3F8AE00910648 /* ReviewsSidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsSidebar.swift; sourceTree = "<group>"; };
+		A64B332C29A3F8AE00910648 /* ReviewsSidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsSidebarView.swift; sourceTree = "<group>"; };
 		A64B332E29A4A35400910648 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		A64B333029A4AA8600910648 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
 		A64B333229A4B00600910648 /* ReviewDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDetailView.swift; sourceTree = "<group>"; };
@@ -169,7 +169,7 @@
 			children = (
 				A64B333229A4B00600910648 /* ReviewDetailView.swift */,
 				A64B332229A35C1F00910648 /* AddReviewView.swift */,
-				A64B332C29A3F8AE00910648 /* ReviewsSidebar.swift */,
+				A64B332C29A3F8AE00910648 /* ReviewsSidebarView.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -319,7 +319,7 @@
 				A64B332F29A4A35400910648 /* RatingView.swift in Sources */,
 				A64B332329A35C1F00910648 /* AddReviewView.swift in Sources */,
 				A64B332129A3595D00910648 /* DataController.swift in Sources */,
-				A64B332D29A3F8AE00910648 /* ReviewsSidebar.swift in Sources */,
+				A64B332D29A3F8AE00910648 /* ReviewsSidebarView.swift in Sources */,
 				A64B333329A4B00600910648 /* ReviewDetailView.swift in Sources */,
 				A64B331F29A3587400910648 /* RottenTomatoes.xcdatamodeld in Sources */,
 				A64B32F429A3580A00910648 /* RottenTomatoesApp.swift in Sources */,

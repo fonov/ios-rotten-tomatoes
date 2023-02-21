@@ -16,7 +16,7 @@ struct ContentView: View {
 
   var body: some View {
     NavigationSplitView {
-      ReviewsSidebar(selection: $selectedReview, filmReviews: filmReviews)
+      ReviewsSidebarView(selection: $selectedReview, filmReviews: filmReviews)
     } detail: {
       if let selectedReview, let filmReview = filmReviews.first(where: { filmReview in
         filmReview.id == selectedReview
