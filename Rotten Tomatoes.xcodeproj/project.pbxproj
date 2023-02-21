@@ -16,10 +16,10 @@
 		A64B331129A3580C00910648 /* Rotten_TomatoesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B331029A3580C00910648 /* Rotten_TomatoesUITestsLaunchTests.swift */; };
 		A64B331F29A3587400910648 /* RottenTomatoes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A64B331D29A3587400910648 /* RottenTomatoes.xcdatamodeld */; };
 		A64B332129A3595D00910648 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B332029A3595D00910648 /* DataController.swift */; };
-		A64B332329A35C1F00910648 /* AddReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B332229A35C1F00910648 /* AddReview.swift */; };
-		A64B332629A35CD300910648 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B332529A35CD300910648 /* Rating.swift */; };
+		A64B332329A35C1F00910648 /* AddReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B332229A35C1F00910648 /* AddReviewView.swift */; };
 		A64B332829A3F31C00910648 /* Genres.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B332729A3F31C00910648 /* Genres.swift */; };
-		A64B332D29A3F8AE00910648 /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B332C29A3F8AE00910648 /* Reviews.swift */; };
+		A64B332D29A3F8AE00910648 /* ReviewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B332C29A3F8AE00910648 /* ReviewsView.swift */; };
+		A64B332F29A4A35400910648 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B332E29A4A35400910648 /* RatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,10 +52,10 @@
 		A64B331029A3580C00910648 /* Rotten_TomatoesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotten_TomatoesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A64B331E29A3587400910648 /* RottenTomatoes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RottenTomatoes.xcdatamodel; sourceTree = "<group>"; };
 		A64B332029A3595D00910648 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		A64B332229A35C1F00910648 /* AddReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReview.swift; sourceTree = "<group>"; };
-		A64B332529A35CD300910648 /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		A64B332229A35C1F00910648 /* AddReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewView.swift; sourceTree = "<group>"; };
 		A64B332729A3F31C00910648 /* Genres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genres.swift; sourceTree = "<group>"; };
-		A64B332C29A3F8AE00910648 /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
+		A64B332C29A3F8AE00910648 /* ReviewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsView.swift; sourceTree = "<group>"; };
+		A64B332E29A4A35400910648 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +146,6 @@
 		A64B332429A35CC700910648 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A64B332529A35CD300910648 /* Rating.swift */,
 				A64B332729A3F31C00910648 /* Genres.swift */,
 			);
 			path = Models;
@@ -155,8 +154,9 @@
 		A64B332929A3F89200910648 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A64B332229A35C1F00910648 /* AddReview.swift */,
-				A64B332C29A3F8AE00910648 /* Reviews.swift */,
+				A64B332229A35C1F00910648 /* AddReviewView.swift */,
+				A64B332C29A3F8AE00910648 /* ReviewsView.swift */,
+				A64B332E29A4A35400910648 /* RatingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -291,12 +291,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A64B332629A35CD300910648 /* Rating.swift in Sources */,
 				A64B32F629A3580A00910648 /* ContentView.swift in Sources */,
 				A64B332829A3F31C00910648 /* Genres.swift in Sources */,
-				A64B332329A35C1F00910648 /* AddReview.swift in Sources */,
+				A64B332F29A4A35400910648 /* RatingView.swift in Sources */,
+				A64B332329A35C1F00910648 /* AddReviewView.swift in Sources */,
 				A64B332129A3595D00910648 /* DataController.swift in Sources */,
-				A64B332D29A3F8AE00910648 /* Reviews.swift in Sources */,
+				A64B332D29A3F8AE00910648 /* ReviewsView.swift in Sources */,
 				A64B331F29A3587400910648 /* RottenTomatoes.xcdatamodeld in Sources */,
 				A64B32F429A3580A00910648 /* RottenTomatoesApp.swift in Sources */,
 			);

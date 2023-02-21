@@ -7,11 +7,13 @@
 
 import SwiftUI
 
-struct Reviews: View {
+struct ReviewsView: View {
   @Environment(\.managedObjectContext) var moc
   @FetchRequest(sortDescriptors: [
     //    SortDescriptor(\.date)
   ]) var filmReviews: FetchedResults<FilmReview>
+
+  @State private var showingAddScreen = false
 
   var body: some View {
     VStack {
@@ -26,6 +28,18 @@ struct Reviews: View {
       }
     }
     .navigationTitle("Rotten Tomatoes")
+    .toolbar {
+      ToolbarItem(placement: .navigationBarTrailing) {
+        Button {
+          showingAddScreen.toggle()
+        } label: {
+          Label("Plus", systemImage: "plus")
+        }
+      }
+    }
+    .sheet(isPresented: $showingAddScreen) {
+      AddReviewView()
+    }
   }
 
   func delete(at offset: IndexSet) {
@@ -40,6 +54,6 @@ struct Reviews: View {
 
 struct Reviews_Previews: PreviewProvider {
   static var previews: some View {
-    Reviews()
+    ReviewsView()
   }
 }

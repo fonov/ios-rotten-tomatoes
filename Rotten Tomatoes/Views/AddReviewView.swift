@@ -8,7 +8,7 @@
 import CoreData
 import SwiftUI
 
-struct AddReview: View {
+struct AddReviewView: View {
   @Environment(\.managedObjectContext) var moc
   @Environment(\.dismiss) var dismiss
 
@@ -16,7 +16,7 @@ struct AddReview: View {
   @State private var director = ""
   @State private var genre: Genres = .unknown
   @State private var review = ""
-  @State private var rating: Rating = .unknown
+  @State private var rating: Int = 1
 
   var body: some View {
     VStack {
@@ -24,8 +24,7 @@ struct AddReview: View {
         Section {
           TextField("Title", text: $title)
           TextField("Direction", text: $director)
-        }
-        Section {
+
           Picker("Genre", selection: $genre) {
             ForEach(Genres.allCases, id: \.self) { genre in
               Text(genre.rawValue)
@@ -34,11 +33,7 @@ struct AddReview: View {
         }
         Section {
           TextEditor(text: $review)
-          Picker("Rating", selection: $rating) {
-            ForEach(Rating.allCases, id: \.self) { rate in
-              Label("\(rate.rawValue)", systemImage: "apple.logo")
-            }
-          }
+          RatingView(rating: $rating)
         } header: {
           Text("Write a review")
         }
@@ -59,7 +54,7 @@ struct AddReview: View {
     filmReview.director = director
     filmReview.genre = genre.rawValue
     filmReview.review = review
-    filmReview.rating = rating.rawValue
+    filmReview.rating = Int16(rating)
     filmReview.dateCreate = Date()
 
     try? moc.save()
@@ -70,6 +65,6 @@ struct AddReview: View {
 
 struct AddReview_Previews: PreviewProvider {
   static var previews: some View {
-    AddReview()
+    AddReviewView()
   }
 }
