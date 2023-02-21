@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
   @FetchRequest(sortDescriptors: [
-    //    SortDescriptor(\.date)
+    SortDescriptor(\.dateCreate, order: .reverse)
   ]) var filmReviews: FetchedResults<FilmReview>
 
   @State private var selectedReview: FilmReview.ID?
