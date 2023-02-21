@@ -18,6 +18,16 @@ struct AddReviewView: View {
   @State private var review = ""
   @State private var rating: Int = 1
 
+  let filmReview: FilmReview?
+
+  init() {
+    filmReview = nil
+  }
+
+  init(filmReview: FilmReview) {
+    self.filmReview = filmReview
+  }
+
   var body: some View {
     VStack {
       Form {
@@ -39,24 +49,41 @@ struct AddReviewView: View {
           Text("Write a review")
         }
         Section {
-          Button("Save") {
+          Button(filmReview != nil ? "Update" : "Save") {
             saveFilmReview()
           }
         }
       }
     }
     .navigationTitle("Add a film review")
+    .onAppear {
+      if let filmReview {
+        title = filmReview.title ?? ""
+        director = filmReview.director ?? ""
+        genre = Genres(rawValue: filmReview.genre ?? "") ?? .action
+        review = filmReview.review ?? ""
+        rating = Int(filmReview.rating)
+      }
+    }
   }
 
   func saveFilmReview() {
-    let filmReview = FilmReview(context: moc)
-    filmReview.id = UUID()
+    let filmReview: FilmReview
+
+    if let _filmReview = self.filmReview {
+      filmReview = _filmReview
+    } else {
+      filmReview = FilmReview(context: moc)
+
+      filmReview.id = UUID()
+      filmReview.dateCreate = Date()
+    }
+
     filmReview.title = title
     filmReview.director = director
     filmReview.genre = genre.rawValue
     filmReview.review = review
     filmReview.rating = Int16(rating)
-    filmReview.dateCreate = Date()
 
     try? moc.save()
 
@@ -64,8 +91,8 @@ struct AddReviewView: View {
   }
 }
 
-struct AddReview_Previews: PreviewProvider {
-  static var previews: some View {
-    AddReviewView()
-  }
-}
+//struct AddReview_Previews: PreviewProvider {
+//  static var previews: some View {
+//    AddReviewView()
+//  }
+//}
