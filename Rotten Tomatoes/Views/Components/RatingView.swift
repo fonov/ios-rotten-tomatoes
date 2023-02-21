@@ -28,7 +28,7 @@ struct RatingView: View {
       ForEach(1 ..< maximumRating + 1) { number in
         image(for: number)
           .resizable()
-          .frame(width: 30, height: 30)
+          .scaledToFit()
           .colorMultiply(colorMultiply(for: number))
           .onTapGesture {
             withAnimation {

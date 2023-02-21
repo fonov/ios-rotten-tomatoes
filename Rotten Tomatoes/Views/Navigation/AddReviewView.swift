@@ -14,7 +14,7 @@ struct AddReviewView: View {
 
   @State private var title = ""
   @State private var director = ""
-  @State private var genre: Genres = .unknown
+  @State private var genre: Genres = .action
   @State private var review = ""
   @State private var rating: Int = 1
 
@@ -34,6 +34,7 @@ struct AddReviewView: View {
         Section {
           TextEditor(text: $review)
           RatingView(rating: $rating)
+            .frame(height: 30)
         } header: {
           Text("Write a review")
         }

@@ -7,27 +7,28 @@
 
 import SwiftUI
 
-struct ReviewsView: View {
+struct ReviewsSidebar: View {
   @Environment(\.managedObjectContext) var moc
-  @FetchRequest(sortDescriptors: [
-    //    SortDescriptor(\.date)
-  ]) var filmReviews: FetchedResults<FilmReview>
 
   @State private var showingAddScreen = false
+  @Binding var selection: FilmReview.ID?
+
+  let filmReviews: FetchedResults<FilmReview>
 
   var body: some View {
     VStack {
-      List {
+      List(selection: $selection) {
         ForEach(filmReviews) { filmReview in
-          HStack {
-            EmojiRatingView(rating: filmReview.rating)
-              .font(.title)
-
-            VStack(alignment: .leading) {
-              Text(filmReview.title ?? "Unknown Title")
-                .font(.headline)
-              Text(filmReview.director ?? "Unknown Director")
-                .foregroundColor(.secondary)
+          NavigationLink(value: filmReview.id) {
+            HStack {
+              EmojiRatingView(rating: filmReview.rating)
+                .font(.title)
+              VStack(alignment: .leading) {
+                Text(filmReview.title ?? "Unknown Title")
+                  .font(.headline)
+                Text("\(filmReview.director ?? "Unknown Director") | \(filmReview.genre?.capitalized ?? "Unknown Genre")")
+                  .foregroundColor(.secondary)
+              }
             }
           }
         }
@@ -59,8 +60,8 @@ struct ReviewsView: View {
   }
 }
 
-struct Reviews_Previews: PreviewProvider {
-  static var previews: some View {
-    ReviewsView()
-  }
-}
+// struct Reviews_Previews: PreviewProvider {
+//  static var previews: some View {
+//    ReviewsSidebar(selection: <#T##Binding<FilmReview.ID?>#>, filmReviews: <#T##FetchedResults<FilmReview>#>)
+//  }
+// }

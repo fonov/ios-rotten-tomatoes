@@ -8,10 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+  @FetchRequest(sortDescriptors: [
+    //    SortDescriptor(\.date)
+  ]) var filmReviews: FetchedResults<FilmReview>
+
+  @State private var selectedReview: FilmReview.ID?
+
   var body: some View {
     NavigationSplitView {
-      ReviewsView()
-    } detail: {}
+      ReviewsSidebar(selection: $selectedReview, filmReviews: filmReviews)
+    } detail: {
+      if let selectedReview, let filmReview = filmReviews.first(where: { filmReview in
+        filmReview.id == selectedReview
+      }) {
+        ReviewDetailView(filmReview: filmReview)
+      } else {
+        Text("Select a film review")
+          .font(.title)
+          .foregroundColor(.secondary)
+      }
+    }
   }
 }
 
