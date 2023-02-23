@@ -112,6 +112,8 @@ struct ReviewDetailView: View {
   func deleteReview() {
     moc.delete(filmReview)
 
-    try? moc.save()
+    if moc.hasChanges {
+      try? moc.save()
+    }
   }
 }

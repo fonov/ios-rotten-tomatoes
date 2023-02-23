@@ -85,7 +85,9 @@ struct AddReviewView: View {
     filmReview.review = review
     filmReview.rating = Int16(rating)
 
-    try? moc.save()
+    if moc.hasChanges {
+      try? moc.save()
+    }
 
     dismiss()
   }

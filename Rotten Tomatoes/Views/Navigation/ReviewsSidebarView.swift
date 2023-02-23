@@ -59,7 +59,9 @@ struct ReviewsSidebarView: View {
       moc.delete(filmReview)
     }
 
-    try? moc.save()
+    if moc.hasChanges {
+      try? moc.save()
+    }
   }
 }
 
