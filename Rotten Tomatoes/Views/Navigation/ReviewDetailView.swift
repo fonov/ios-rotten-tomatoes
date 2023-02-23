@@ -12,7 +12,8 @@ struct ReviewDetailView: View {
   var selectedReview: FilmReview.ID
 
   @Environment(\.managedObjectContext) var moc
-  @Environment(\.dismiss) var dismis
+  @Environment(\.dismiss) var dismiss
+
   @State private var showingDeleteAlert = false
   @State private var showingAddScreen = false
 
@@ -20,12 +21,18 @@ struct ReviewDetailView: View {
     SortDescriptor(\.dateCreate, order: .reverse),
   ]) var filmReviews: FetchedResults<FilmReview>
 
+  @State private var isDeleteFilmReview = false
+
   var filmReview: FilmReview {
-    filmReviews.first(where: { $0.id == selectedReview }) ?? filmReviews[0]
+    guard let filmReview = filmReviews.first(where: { $0.id == selectedReview }) else {
+      fatalError("can't find film review")
+    }
+
+    return filmReview
   }
 
   var body: some View {
-    let genre = Genres(rawValue: filmReview.genre ?? "") ?? .action
+    let genre = Genres(rawValue: filmReview.wrappedGenre) ?? .action
 
     ScrollView {
       ZStack(alignment: .bottomTrailing) {
@@ -45,7 +52,7 @@ struct ReviewDetailView: View {
           .offset(x: -5, y: -5)
       }
 
-      Text(filmReview.director ?? "Unknown Director")
+      Text(filmReview.wrappedDirector)
         .font(.title)
         .foregroundColor(.secondary)
 
@@ -56,19 +63,18 @@ struct ReviewDetailView: View {
         }
       }
 
-      Text(filmReview.review ?? "No review")
+      Text(filmReview.wrappedReview)
         .padding()
 
       RatingView(rating: .constant(Int(filmReview.rating)))
         .padding()
     }
-    .alert("Delete the film review?", isPresented: $showingDeleteAlert) {
-      Button("Delete", role: .destructive, action: deleteReview)
-      Button("Cancel", role: .cancel) {}
-    } message: {
-      Text("Are you sure?")
+    .onDisappear {
+      if isDeleteFilmReview {
+        deleteReview()
+      }
     }
-    .navigationTitle(filmReview.title ?? "Unknown film")
+    .navigationTitle(filmReview.wrappedTitle)
     .navigationBarTitleDisplayMode(.inline)
     .toolbar {
       ToolbarItem(placement: .navigationBarTrailing) {
@@ -76,6 +82,12 @@ struct ReviewDetailView: View {
           showingDeleteAlert.toggle()
         } label: {
           Label("Delete the film review", systemImage: "trash")
+        }
+        .alert("Delete the film review?", isPresented: $showingDeleteAlert) {
+          Button("Delete", role: .destructive, action: deleteReviewRequest)
+          Button("Cancel", role: .cancel) {}
+        } message: {
+          Text("Are you sure?")
         }
       }
       ToolbarItem(placement: .navigationBarTrailing) {
@@ -91,11 +103,15 @@ struct ReviewDetailView: View {
     }
   }
 
+  func deleteReviewRequest() {
+    isDeleteFilmReview = true
+
+    dismiss()
+  }
+
   func deleteReview() {
     moc.delete(filmReview)
 
     try? moc.save()
-
-    dismis()
   }
 }

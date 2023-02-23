@@ -22,6 +22,8 @@
 		A64B332F29A4A35400910648 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B332E29A4A35400910648 /* RatingView.swift */; };
 		A64B333129A4AA8600910648 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B333029A4AA8600910648 /* EmojiRatingView.swift */; };
 		A64B333329A4B00600910648 /* ReviewDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B333229A4B00600910648 /* ReviewDetailView.swift */; };
+		A6D86EA329A7D2B800079858 /* FilmReview+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D86EA129A7D2B800079858 /* FilmReview+CoreDataClass.swift */; };
+		A6D86EA429A7D2B800079858 /* FilmReview+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D86EA229A7D2B800079858 /* FilmReview+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		A64B332E29A4A35400910648 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		A64B333029A4AA8600910648 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
 		A64B333229A4B00600910648 /* ReviewDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDetailView.swift; sourceTree = "<group>"; };
+		A6D86EA129A7D2B800079858 /* FilmReview+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmReview+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A6D86EA229A7D2B800079858 /* FilmReview+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmReview+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 		A64B32F229A3580A00910648 /* Rotten Tomatoes */ = {
 			isa = PBXGroup;
 			children = (
+				A6D86EA129A7D2B800079858 /* FilmReview+CoreDataClass.swift */,
+				A6D86EA229A7D2B800079858 /* FilmReview+CoreDataProperties.swift */,
 				A64B332929A3F89200910648 /* Views */,
 				A64B332429A35CC700910648 /* Models */,
 				A64B32F329A3580A00910648 /* RottenTomatoesApp.swift */,
@@ -313,12 +319,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6D86EA329A7D2B800079858 /* FilmReview+CoreDataClass.swift in Sources */,
 				A64B32F629A3580A00910648 /* ContentView.swift in Sources */,
 				A64B333129A4AA8600910648 /* EmojiRatingView.swift in Sources */,
 				A64B332829A3F31C00910648 /* Genres.swift in Sources */,
 				A64B332F29A4A35400910648 /* RatingView.swift in Sources */,
 				A64B332329A35C1F00910648 /* AddReviewView.swift in Sources */,
 				A64B332129A3595D00910648 /* DataController.swift in Sources */,
+				A6D86EA429A7D2B800079858 /* FilmReview+CoreDataProperties.swift in Sources */,
 				A64B332D29A3F8AE00910648 /* ReviewsSidebarView.swift in Sources */,
 				A64B333329A4B00600910648 /* ReviewDetailView.swift in Sources */,
 				A64B331F29A3587400910648 /* RottenTomatoes.xcdatamodeld in Sources */,

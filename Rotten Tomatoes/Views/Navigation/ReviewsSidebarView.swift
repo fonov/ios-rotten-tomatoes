@@ -24,9 +24,9 @@ struct ReviewsSidebarView: View {
               EmojiRatingView(rating: filmReview.rating)
                 .font(.title)
               VStack(alignment: .leading) {
-                Text(filmReview.title ?? "Unknown Title")
+                Text(filmReview.wrappedTitle)
                   .font(.headline)
-                Text("\(filmReview.director ?? "Unknown Director") | \(filmReview.genre?.capitalized ?? "Unknown Genre")")
+                Text("\(filmReview.wrappedDirector) | \(filmReview.wrappedGenre.capitalized)")
                   .foregroundColor(.secondary)
               }
             }

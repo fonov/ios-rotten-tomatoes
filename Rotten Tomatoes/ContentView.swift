@@ -13,7 +13,7 @@ struct ContentView: View {
   ]) var filmReviews: FetchedResults<FilmReview>
 
   @State private var selectedReview: FilmReview.ID?
-  
+
   var body: some View {
     NavigationSplitView {
       ReviewsSidebarView(selection: $selectedReview, filmReviews: filmReviews)
