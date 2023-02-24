@@ -15,6 +15,8 @@ class DataController: ObservableObject {
       if let error {
         fatalError(error.localizedDescription)
       }
+
+      self.container.viewContext.mergePolicy = NSMergePolicy.mergeByPropertyObjectTrump
     }
   }
 }

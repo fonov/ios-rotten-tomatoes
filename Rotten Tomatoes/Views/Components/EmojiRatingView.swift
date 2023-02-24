@@ -23,7 +23,7 @@ struct EmojiRatingView: View {
     case 2:
       return Text("☹️")
     case 3:
-      return Text("🙁")
+      return Text("🤨")
     case 4:
       return Text("😄")
     default:
@@ -38,7 +38,7 @@ struct EmojiRatingView: View {
     case 2:
       return .orange
     case 3:
-      return .yellow
+      return .cyan
     case 4:
       return .indigo
     default:
@@ -49,6 +49,10 @@ struct EmojiRatingView: View {
 
 struct EmojiRatingView_Previews: PreviewProvider {
   static var previews: some View {
-    EmojiRatingView(rating: 5)
+    HStack {
+      ForEach(1..<6) {
+        EmojiRatingView(rating: Int16($0))
+      }
+    }
   }
 }
