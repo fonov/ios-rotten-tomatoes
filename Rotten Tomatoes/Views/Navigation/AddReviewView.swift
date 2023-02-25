@@ -22,6 +22,13 @@ struct AddReviewView: View {
 
   init() {
     filmReview = nil
+
+    #if targetEnvironment(simulator)
+      _title = State(initialValue: "Adventures")
+      _director = State(initialValue: "Russo")
+      _review = State(initialValue: "A Bright pictures")
+      _rating = State(initialValue: 5)
+    #endif
   }
 
   init(filmReview: FilmReview) {

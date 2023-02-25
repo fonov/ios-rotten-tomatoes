@@ -50,7 +50,7 @@ struct EmojiRatingView: View {
 struct EmojiRatingView_Previews: PreviewProvider {
   static var previews: some View {
     HStack {
-      ForEach(1..<6) {
+      ForEach(1 ..< 6) {
         EmojiRatingView(rating: Int16($0))
       }
     }

@@ -8,17 +8,18 @@
 import SwiftUI
 
 struct ReviewsSidebarView: View {
-  @Environment(\.managedObjectContext) var moc
-
-  @State private var showingAddScreen = false
   @Binding var selection: FilmReview.ID?
 
-  let filmReviews: FetchedResults<FilmReview>
+  @State private var showingAddScreen = false
+
+  @State private var search = ""
+  @State private var sort = Sort.none
 
   var body: some View {
     VStack {
+      SearchBar(searchText: $search)
       List(selection: $selection) {
-        ForEach(filmReviews) { filmReview in
+        FetchList(searchKey: "title", searchValue: search, sort: sort) { (filmReview: FilmReview) in
           NavigationLink(value: filmReview.id) {
             HStack {
               EmojiRatingView(rating: filmReview.rating)
@@ -32,7 +33,6 @@ struct ReviewsSidebarView: View {
             }
           }
         }
-        .onDelete(perform: delete)
       }
     }
     .navigationTitle("Rotten Tomatoes")
@@ -47,20 +47,20 @@ struct ReviewsSidebarView: View {
           Label("Plus", systemImage: "plus")
         }
       }
+      ToolbarItem(placement: .navigationBarTrailing) {
+        Menu {
+          Picker("Sort", selection: $sort) {
+            ForEach(Sort.allCases, id: \.self) {
+              Text($0.rawValue.capitalized)
+            }
+          }
+        } label: {
+          Label("Sort", systemImage: "slider.horizontal.3")
+        }
+      }
     }
     .sheet(isPresented: $showingAddScreen) {
       AddReviewView()
-    }
-  }
-
-  func delete(at offset: IndexSet) {
-    for index in offset {
-      let filmReview = filmReviews[index]
-      moc.delete(filmReview)
-    }
-
-    if moc.hasChanges {
-      try? moc.save()
     }
   }
 }

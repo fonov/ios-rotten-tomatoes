@@ -8,15 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-  @FetchRequest(sortDescriptors: [
-    SortDescriptor(\.dateCreate, order: .reverse),
-  ]) var filmReviews: FetchedResults<FilmReview>
-
   @State private var selectedReview: FilmReview.ID?
 
   var body: some View {
     NavigationSplitView {
-      ReviewsSidebarView(selection: $selectedReview, filmReviews: filmReviews)
+      ReviewsSidebarView(selection: $selectedReview)
     } detail: {
       if let selectedReview {
         ReviewDetailView(selectedReview: selectedReview)
