@@ -10,6 +10,10 @@
 		A611434729AA14B700A9C304 /* FetchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611434629AA14B700A9C304 /* FetchList.swift */; };
 		A611434929AA1D0E00A9C304 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611434829AA1D0E00A9C304 /* SearchBar.swift */; };
 		A611434C29AA28C800A9C304 /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611434B29AA28C800A9C304 /* Sort.swift */; };
+		A611435D29AB690600A9C304 /* Comment+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611435929AB690600A9C304 /* Comment+CoreDataClass.swift */; };
+		A611435E29AB690600A9C304 /* Comment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611435A29AB690600A9C304 /* Comment+CoreDataProperties.swift */; };
+		A611435F29AB690600A9C304 /* FilmReview+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611435B29AB690600A9C304 /* FilmReview+CoreDataClass.swift */; };
+		A611436029AB690600A9C304 /* FilmReview+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611435C29AB690600A9C304 /* FilmReview+CoreDataProperties.swift */; };
 		A64B32F429A3580A00910648 /* RottenTomatoesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B32F329A3580A00910648 /* RottenTomatoesApp.swift */; };
 		A64B32F629A3580A00910648 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B32F529A3580A00910648 /* ContentView.swift */; };
 		A64B32F829A3580B00910648 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A64B32F729A3580B00910648 /* Assets.xcassets */; };
@@ -25,8 +29,6 @@
 		A64B332F29A4A35400910648 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B332E29A4A35400910648 /* RatingView.swift */; };
 		A64B333129A4AA8600910648 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B333029A4AA8600910648 /* EmojiRatingView.swift */; };
 		A64B333329A4B00600910648 /* ReviewDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B333229A4B00600910648 /* ReviewDetailView.swift */; };
-		A6D86EA329A7D2B800079858 /* FilmReview+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D86EA129A7D2B800079858 /* FilmReview+CoreDataClass.swift */; };
-		A6D86EA429A7D2B800079858 /* FilmReview+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D86EA229A7D2B800079858 /* FilmReview+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,10 @@
 		A611434629AA14B700A9C304 /* FetchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchList.swift; sourceTree = "<group>"; };
 		A611434829AA1D0E00A9C304 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		A611434B29AA28C800A9C304 /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
+		A611435929AB690600A9C304 /* Comment+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A611435A29AB690600A9C304 /* Comment+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A611435B29AB690600A9C304 /* FilmReview+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmReview+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A611435C29AB690600A9C304 /* FilmReview+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmReview+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A64B32F029A3580A00910648 /* Rotten Tomatoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rotten Tomatoes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A64B32F329A3580A00910648 /* RottenTomatoesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RottenTomatoesApp.swift; sourceTree = "<group>"; };
 		A64B32F529A3580A00910648 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,8 +74,6 @@
 		A64B332E29A4A35400910648 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		A64B333029A4AA8600910648 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
 		A64B333229A4B00600910648 /* ReviewDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDetailView.swift; sourceTree = "<group>"; };
-		A6D86EA129A7D2B800079858 /* FilmReview+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmReview+CoreDataClass.swift"; sourceTree = "<group>"; };
-		A6D86EA229A7D2B800079858 /* FilmReview+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmReview+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +124,10 @@
 		A64B32F229A3580A00910648 /* Rotten Tomatoes */ = {
 			isa = PBXGroup;
 			children = (
-				A6D86EA129A7D2B800079858 /* FilmReview+CoreDataClass.swift */,
-				A6D86EA229A7D2B800079858 /* FilmReview+CoreDataProperties.swift */,
+				A611435929AB690600A9C304 /* Comment+CoreDataClass.swift */,
+				A611435A29AB690600A9C304 /* Comment+CoreDataProperties.swift */,
+				A611435B29AB690600A9C304 /* FilmReview+CoreDataClass.swift */,
+				A611435C29AB690600A9C304 /* FilmReview+CoreDataProperties.swift */,
 				A64B332929A3F89200910648 /* Views */,
 				A64B332429A35CC700910648 /* Models */,
 				A64B32F329A3580A00910648 /* RottenTomatoesApp.swift */,
@@ -328,17 +334,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6D86EA329A7D2B800079858 /* FilmReview+CoreDataClass.swift in Sources */,
 				A64B32F629A3580A00910648 /* ContentView.swift in Sources */,
 				A64B333129A4AA8600910648 /* EmojiRatingView.swift in Sources */,
 				A64B332829A3F31C00910648 /* Genres.swift in Sources */,
 				A611434729AA14B700A9C304 /* FetchList.swift in Sources */,
+				A611435E29AB690600A9C304 /* Comment+CoreDataProperties.swift in Sources */,
 				A64B332F29A4A35400910648 /* RatingView.swift in Sources */,
+				A611435D29AB690600A9C304 /* Comment+CoreDataClass.swift in Sources */,
+				A611435F29AB690600A9C304 /* FilmReview+CoreDataClass.swift in Sources */,
 				A64B332329A35C1F00910648 /* AddReviewView.swift in Sources */,
 				A611434929AA1D0E00A9C304 /* SearchBar.swift in Sources */,
+				A611436029AB690600A9C304 /* FilmReview+CoreDataProperties.swift in Sources */,
 				A611434C29AA28C800A9C304 /* Sort.swift in Sources */,
 				A64B332129A3595D00910648 /* DataController.swift in Sources */,
-				A6D86EA429A7D2B800079858 /* FilmReview+CoreDataProperties.swift in Sources */,
 				A64B332D29A3F8AE00910648 /* ReviewsSidebarView.swift in Sources */,
 				A64B333329A4B00600910648 /* ReviewDetailView.swift in Sources */,
 				A64B331F29A3587400910648 /* RottenTomatoes.xcdatamodeld in Sources */,

@@ -3,6 +3,9 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "ReviewDetailView.filmReview.getter:ReviewDetailView.swift">
+      </ContextState>
+      <ContextState
          contextName = "AddReviewView.init(filmReview:):AddReviewView.swift">
          <PersistentStrings>
             <PersistentString

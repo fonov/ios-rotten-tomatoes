@@ -17,11 +17,17 @@ struct ReviewDetailView: View {
   @State private var showingDeleteAlert = false
   @State private var showingAddScreen = false
 
-  @FetchRequest(sortDescriptors: [
-    SortDescriptor(\.dateCreate, order: .reverse),
-  ]) var filmReviews: FetchedResults<FilmReview>
+  @FetchRequest var filmReviews: FetchedResults<FilmReview>
 
   @State private var isDeleteFilmReview = false
+  @State private var commentText = ""
+
+  init(selectedReview: FilmReview.ID) {
+    self.selectedReview = selectedReview
+
+    // TODO: add filter by UUID
+    _filmReviews = FetchRequest(sortDescriptors: [], predicate: nil)
+  }
 
   var filmReview: FilmReview {
     guard let filmReview = filmReviews.first(where: { $0.id == selectedReview }) else {
@@ -68,8 +74,34 @@ struct ReviewDetailView: View {
 
       RatingView(rating: .constant(Int(filmReview.rating)))
         .padding()
+
+      VStack(alignment: .leading) {
+        TextField("Leave comment", text: $commentText)
+        Button("Add comment") {
+          let comment = Comment(context: moc)
+          comment.comment = commentText
+          comment.createAt = Date()
+          comment.origin = filmReview
+
+          if moc.hasChanges {
+            try? moc.save()
+          }
+
+          commentText = ""
+        }
+        ForEach(filmReview.commentArray, id: \.self) { comment in
+          VStack(alignment: .leading) {
+            Text(comment.wrappedComment)
+            Text(comment.wrappedCreateAt, style: .date)
+              .padding(.top, 2)
+          }
+          .padding(.vertical)
+        }
+      }
+      .padding()
     }
     .onDisappear {
+      // TODO: Programmatically dismiss on remove
       if isDeleteFilmReview {
         deleteReview()
       }
@@ -106,6 +138,7 @@ struct ReviewDetailView: View {
   func deleteReviewRequest() {
     isDeleteFilmReview = true
 
+    // TODO: fix dismiss action
     dismiss()
   }
 
