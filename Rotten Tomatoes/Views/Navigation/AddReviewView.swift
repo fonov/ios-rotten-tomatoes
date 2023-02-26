@@ -18,10 +18,10 @@ struct AddReviewView: View {
   @State private var review = ""
   @State private var rating: Int = 1
 
-  let filmReview: FilmReview?
+  let updatedFilmReview: FilmReview?
 
   init() {
-    filmReview = nil
+    updatedFilmReview = nil
 
     #if targetEnvironment(simulator)
       _title = State(initialValue: "Adventures")
@@ -32,7 +32,7 @@ struct AddReviewView: View {
   }
 
   init(filmReview: FilmReview) {
-    self.filmReview = filmReview
+    updatedFilmReview = filmReview
   }
 
   var body: some View {
@@ -64,7 +64,7 @@ struct AddReviewView: View {
     }
     .navigationTitle("Add a film review")
     .onAppear {
-      if let filmReview {
+      if updatedFilmReview != nil {
         title = filmReview.title ?? ""
         director = filmReview.director ?? ""
         genre = Genres(rawValue: filmReview.genre ?? "") ?? .action
@@ -74,17 +74,21 @@ struct AddReviewView: View {
     }
   }
 
-  func saveFilmReview() {
-    let filmReview: FilmReview
-
-    if let _filmReview = self.filmReview {
-      filmReview = _filmReview
+  var filmReview: FilmReview {
+    if let filmReview = updatedFilmReview {
+      return filmReview
     } else {
-      filmReview = FilmReview(context: moc)
+      let filmReview = FilmReview(context: moc)
 
       filmReview.id = UUID()
       filmReview.dateCreate = Date()
+
+      return filmReview
     }
+  }
+
+  func saveFilmReview() {
+    let filmReview = filmReview
 
     filmReview.title = title
     filmReview.director = director

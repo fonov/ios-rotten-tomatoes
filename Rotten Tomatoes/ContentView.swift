@@ -5,10 +5,11 @@
 //  Created by Sergei Fonov on 20.02.23.
 //
 
+import CoreData
 import SwiftUI
 
 struct ContentView: View {
-  @State private var selectedReview: FilmReview.ID?
+  @State private var selectedReview: NSManagedObjectID?
 
   var body: some View {
     NavigationSplitView {

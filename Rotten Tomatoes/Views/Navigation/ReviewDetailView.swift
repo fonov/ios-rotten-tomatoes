@@ -9,7 +9,7 @@ import CoreData
 import SwiftUI
 
 struct ReviewDetailView: View {
-  var selectedReview: FilmReview.ID
+  var selectedReview: NSManagedObjectID
 
   @Environment(\.managedObjectContext) var moc
   @Environment(\.dismiss) var dismiss
@@ -22,15 +22,14 @@ struct ReviewDetailView: View {
   @State private var isDeleteFilmReview = false
   @State private var commentText = ""
 
-  init(selectedReview: FilmReview.ID) {
+  init(selectedReview: NSManagedObjectID) {
     self.selectedReview = selectedReview
 
-    // TODO: add filter by UUID
-    _filmReviews = FetchRequest(sortDescriptors: [], predicate: nil)
+    _filmReviews = FetchRequest(sortDescriptors: [], predicate: NSPredicate(format: "SELF == %@", selectedReview))
   }
 
   var filmReview: FilmReview {
-    guard let filmReview = filmReviews.first(where: { $0.id == selectedReview }) else {
+    guard let filmReview = filmReviews.first else {
       fatalError("can't find film review")
     }
 

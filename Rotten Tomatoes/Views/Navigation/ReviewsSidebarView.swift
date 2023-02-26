@@ -5,10 +5,11 @@
 //  Created by Sergei Fonov on 20.02.23.
 //
 
+import CoreData
 import SwiftUI
 
 struct ReviewsSidebarView: View {
-  @Binding var selection: FilmReview.ID?
+  @Binding var selection: NSManagedObjectID?
 
   @State private var showingAddScreen = false
 
@@ -20,7 +21,7 @@ struct ReviewsSidebarView: View {
       SearchBar(searchText: $search)
       List(selection: $selection) {
         FetchList(searchKey: "title", searchValue: search, sort: sort) { (filmReview: FilmReview) in
-          NavigationLink(value: filmReview.id) {
+          NavigationLink(value: filmReview.objectID) {
             HStack {
               EmojiRatingView(rating: filmReview.rating)
                 .font(.title)
