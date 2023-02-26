@@ -15,8 +15,8 @@ struct ContentView: View {
     NavigationSplitView {
       ReviewsSidebarView(selection: $selectedReview)
     } detail: {
-      if let selectedReview {
-        ReviewDetailView(selectedReview: selectedReview)
+      if selectedReview != nil {
+        ReviewDetailView(selectedReview: $selectedReview)
       } else {
         Text("Select a film review")
           .font(.title)

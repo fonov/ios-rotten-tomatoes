@@ -9,10 +9,9 @@ import CoreData
 import SwiftUI
 
 struct ReviewDetailView: View {
-  var selectedReview: NSManagedObjectID
+  @Binding var selectedReview: NSManagedObjectID?
 
   @Environment(\.managedObjectContext) var moc
-  @Environment(\.dismiss) var dismiss
 
   @State private var showingDeleteAlert = false
   @State private var showingAddScreen = false
@@ -22,10 +21,14 @@ struct ReviewDetailView: View {
   @State private var isDeleteFilmReview = false
   @State private var commentText = ""
 
-  init(selectedReview: NSManagedObjectID) {
-    self.selectedReview = selectedReview
+  init(selectedReview: Binding<NSManagedObjectID?>) {
+    _selectedReview = selectedReview
 
-    _filmReviews = FetchRequest(sortDescriptors: [], predicate: NSPredicate(format: "SELF == %@", selectedReview))
+    guard let selected = selectedReview.wrappedValue else {
+      fatalError("can't find film review")
+    }
+
+    _filmReviews = FetchRequest(sortDescriptors: [], predicate: NSPredicate(format: "SELF == %@", selected))
   }
 
   var filmReview: FilmReview {
@@ -100,7 +103,6 @@ struct ReviewDetailView: View {
       .padding()
     }
     .onDisappear {
-      // TODO: Programmatically dismiss on remove
       if isDeleteFilmReview {
         deleteReview()
       }
@@ -137,8 +139,7 @@ struct ReviewDetailView: View {
   func deleteReviewRequest() {
     isDeleteFilmReview = true
 
-    // TODO: fix dismiss action
-    dismiss()
+    selectedReview = nil
   }
 
   func deleteReview() {
