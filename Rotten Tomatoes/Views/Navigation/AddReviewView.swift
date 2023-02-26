@@ -80,7 +80,6 @@ struct AddReviewView: View {
     } else {
       let filmReview = FilmReview(context: moc)
 
-      filmReview.id = UUID()
       filmReview.dateCreate = Date()
 
       return filmReview
