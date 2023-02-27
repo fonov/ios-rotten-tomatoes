@@ -14,6 +14,7 @@
 		A611435E29AB690600A9C304 /* Comment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611435A29AB690600A9C304 /* Comment+CoreDataProperties.swift */; };
 		A611435F29AB690600A9C304 /* FilmReview+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611435B29AB690600A9C304 /* FilmReview+CoreDataClass.swift */; };
 		A611436029AB690600A9C304 /* FilmReview+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611435C29AB690600A9C304 /* FilmReview+CoreDataProperties.swift */; };
+		A611436229AC774E00A9C304 /* FilmReviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611436129AC774E00A9C304 /* FilmReviewHelper.swift */; };
 		A64B32F429A3580A00910648 /* RottenTomatoesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B32F329A3580A00910648 /* RottenTomatoesApp.swift */; };
 		A64B32F629A3580A00910648 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B32F529A3580A00910648 /* ContentView.swift */; };
 		A64B32F829A3580B00910648 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A64B32F729A3580B00910648 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		A611435A29AB690600A9C304 /* Comment+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A611435B29AB690600A9C304 /* FilmReview+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmReview+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A611435C29AB690600A9C304 /* FilmReview+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmReview+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A611436129AC774E00A9C304 /* FilmReviewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmReviewHelper.swift; sourceTree = "<group>"; };
 		A64B32F029A3580A00910648 /* Rotten Tomatoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rotten Tomatoes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A64B32F329A3580A00910648 /* RottenTomatoesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RottenTomatoesApp.swift; sourceTree = "<group>"; };
 		A64B32F529A3580A00910648 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			children = (
 				A64B332729A3F31C00910648 /* Genres.swift */,
 				A611434B29AA28C800A9C304 /* Sort.swift */,
+				A611436129AC774E00A9C304 /* FilmReviewHelper.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				A611436029AB690600A9C304 /* FilmReview+CoreDataProperties.swift in Sources */,
 				A611434C29AA28C800A9C304 /* Sort.swift in Sources */,
 				A64B332129A3595D00910648 /* DataController.swift in Sources */,
+				A611436229AC774E00A9C304 /* FilmReviewHelper.swift in Sources */,
 				A64B332D29A3F8AE00910648 /* ReviewsSidebarView.swift in Sources */,
 				A64B333329A4B00600910648 /* ReviewDetailView.swift in Sources */,
 				A64B331F29A3587400910648 /* RottenTomatoes.xcdatamodeld in Sources */,

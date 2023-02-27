@@ -9,6 +9,8 @@ import CoreData
 import SwiftUI
 
 struct ReviewsSidebarView: View {
+  @Environment(\.managedObjectContext) var moc
+  
   @Binding var selection: NSManagedObjectID?
 
   @State private var showingAddScreen = false
@@ -55,6 +57,8 @@ struct ReviewsSidebarView: View {
               Text($0.rawValue.capitalized)
             }
           }
+
+          Button("Add samples", action: addSamples)
         } label: {
           Label("Sort", systemImage: "slider.horizontal.3")
         }
@@ -62,6 +66,14 @@ struct ReviewsSidebarView: View {
     }
     .sheet(isPresented: $showingAddScreen) {
       AddReviewView()
+    }
+  }
+
+  func addSamples() {
+    createFilmReviewSamples(moc)
+
+    if moc.hasChanges {
+      try? moc.save()
     }
   }
 }
