@@ -10,19 +10,30 @@ import SwiftUI
 
 struct ReviewsSidebarView: View {
   @Environment(\.managedObjectContext) var moc
-  
+
+  @FetchRequest(sortDescriptors: [])
+  private var fetchRequest: FetchedResults<FilmReview>
+
   @Binding var selection: NSManagedObjectID?
 
   @State private var showingAddScreen = false
-
-  @State private var search = ""
   @State private var sort = Sort.none
+
+  @State private var searchText = ""
+  var query: Binding<String> {
+    Binding {
+      searchText
+    } set: { newValue in
+      searchText = newValue
+      fetchRequest.nsPredicate = newValue.isEmpty ? nil :
+        NSPredicate(format: "title CONTAINS[c] %@ OR director CONTAINS[c] %@", newValue, newValue)
+    }
+  }
 
   var body: some View {
     VStack {
-      SearchBar(searchText: $search)
       List(selection: $selection) {
-        FetchList(searchKey: "title", searchValue: search, sort: sort) { (filmReview: FilmReview) in
+        ForEach(fetchRequest, id: \.self) { filmReview in
           NavigationLink(value: filmReview.objectID) {
             HStack {
               EmojiRatingView(rating: filmReview.rating)
@@ -36,7 +47,9 @@ struct ReviewsSidebarView: View {
             }
           }
         }
+        .onDelete(perform: delete)
       }
+      .searchable(text: query)
     }
     .navigationTitle("Rotten Tomatoes")
     .toolbar {
@@ -67,10 +80,31 @@ struct ReviewsSidebarView: View {
     .sheet(isPresented: $showingAddScreen) {
       AddReviewView()
     }
+    .onChange(of: sort) { _ in
+      switch sort {
+      case .asc:
+        fetchRequest.sortDescriptors = [SortDescriptor(\FilmReview.dateCreate)]
+      case .desc:
+        fetchRequest.sortDescriptors = [SortDescriptor(\FilmReview.dateCreate, order: .reverse)]
+      default:
+        fetchRequest.sortDescriptors = []
+      }
+    }
   }
 
   func addSamples() {
     createFilmReviewSamples(moc)
+
+    if moc.hasChanges {
+      try? moc.save()
+    }
+  }
+
+  func delete(at offset: IndexSet) {
+    for index in offset {
+      let item = fetchRequest[index]
+      moc.delete(item)
+    }
 
     if moc.hasChanges {
       try? moc.save()
