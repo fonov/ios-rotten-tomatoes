@@ -37,6 +37,7 @@ struct RatingView: View {
           }
       }
     }
+    .print(maximumRating)
   }
 
   func image(for number: Int) -> Image {

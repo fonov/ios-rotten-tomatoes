@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A60984A529B89C1D008098C8 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60984A429B89C1D008098C8 /* View.swift */; };
 		A611434729AA14B700A9C304 /* FetchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611434629AA14B700A9C304 /* FetchList.swift */; };
 		A611434929AA1D0E00A9C304 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611434829AA1D0E00A9C304 /* SearchBar.swift */; };
 		A611434C29AA28C800A9C304 /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611434B29AA28C800A9C304 /* Sort.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A60984A429B89C1D008098C8 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		A611434629AA14B700A9C304 /* FetchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchList.swift; sourceTree = "<group>"; };
 		A611434829AA1D0E00A9C304 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		A611434B29AA28C800A9C304 /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
@@ -103,6 +105,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A60984A329B89C0C008098C8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A60984A429B89C1D008098C8 /* View.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A64B32E729A3580A00910648 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +136,7 @@
 		A64B32F229A3580A00910648 /* Rotten Tomatoes */ = {
 			isa = PBXGroup;
 			children = (
+				A60984A329B89C0C008098C8 /* Extensions */,
 				A611435929AB690600A9C304 /* Comment+CoreDataClass.swift */,
 				A611435A29AB690600A9C304 /* Comment+CoreDataProperties.swift */,
 				A611435B29AB690600A9C304 /* FilmReview+CoreDataClass.swift */,
@@ -343,6 +354,7 @@
 				A611434729AA14B700A9C304 /* FetchList.swift in Sources */,
 				A611435E29AB690600A9C304 /* Comment+CoreDataProperties.swift in Sources */,
 				A64B332F29A4A35400910648 /* RatingView.swift in Sources */,
+				A60984A529B89C1D008098C8 /* View.swift in Sources */,
 				A611435D29AB690600A9C304 /* Comment+CoreDataClass.swift in Sources */,
 				A611435F29AB690600A9C304 /* FilmReview+CoreDataClass.swift in Sources */,
 				A64B332329A35C1F00910648 /* AddReviewView.swift in Sources */,
