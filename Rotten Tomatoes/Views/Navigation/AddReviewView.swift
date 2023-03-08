@@ -103,8 +103,11 @@ struct AddReviewView: View {
   }
 }
 
-// struct AddReview_Previews: PreviewProvider {
-//  static var previews: some View {
-//    AddReviewView()
-//  }
-// }
+struct AddReview_Previews: PreviewProvider {
+  static let moc = DataController().container.viewContext
+
+  static var previews: some View {
+    AddReviewView()
+      .environment(\.managedObjectContext, moc)
+  }
+}

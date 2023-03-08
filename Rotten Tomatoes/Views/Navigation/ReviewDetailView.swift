@@ -150,3 +150,20 @@ struct ReviewDetailView: View {
     }
   }
 }
+
+struct ReviewDetailView_Previews: PreviewProvider {
+  static let moc = DataController().container.viewContext
+
+  static var previews: some View {
+    let filmReview = FilmReview(context: moc)
+    filmReview.dateCreate = Date()
+    filmReview.title = "THE INVITATION"
+    filmReview.director = "Jessica M. Thompson"
+    filmReview.genre = Genres.horror.rawValue
+    filmReview.review = "Just don't watch the trailer"
+    filmReview.rating = Int16(1)
+
+    return ReviewDetailView(selectedReview: .constant(Optional(filmReview.objectID)))
+      .environment(\.managedObjectContext, moc)
+  }
+}

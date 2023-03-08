@@ -112,8 +112,15 @@ struct ReviewsSidebarView: View {
   }
 }
 
-// struct Reviews_Previews: PreviewProvider {
-//  static var previews: some View {
-//    ReviewsSidebar(selection: <#T##Binding<FilmReview.ID?>#>, filmReviews: <#T##FetchedResults<FilmReview>#>)
-//  }
-// }
+struct Reviews_Previews: PreviewProvider {
+  static let moc = DataController().container.viewContext
+
+  static var previews: some View {
+    createFilmReviewSamples(moc)
+
+    return NavigationView {
+      ReviewsSidebarView(selection: .constant(nil))
+        .environment(\.managedObjectContext, moc)
+    }
+  }
+}

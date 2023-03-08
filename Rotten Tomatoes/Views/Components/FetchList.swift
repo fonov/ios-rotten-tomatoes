@@ -66,9 +66,3 @@ extension FetchList where T: FilmReview {
     self.content = content
   }
 }
-
-// struct FilteredList_Previews: PreviewProvider {
-//    static var previews: some View {
-//        FilteredList()
-//    }
-// }
