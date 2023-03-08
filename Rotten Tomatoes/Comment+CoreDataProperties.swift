@@ -11,7 +11,7 @@ import Foundation
 
 public extension Comment {
   @nonobjc class func fetchRequest() -> NSFetchRequest<Comment> {
-    return NSFetchRequest<Comment>(entityName: "Comment")
+    NSFetchRequest<Comment>(entityName: "Comment")
   }
 
   @NSManaged var comment: String?

@@ -11,7 +11,7 @@ import Foundation
 
 public extension FilmReview {
   @nonobjc class func fetchRequest() -> NSFetchRequest<FilmReview> {
-    return NSFetchRequest<FilmReview>(entityName: "FilmReview")
+    NSFetchRequest<FilmReview>(entityName: "FilmReview")
   }
 
   @NSManaged var dateCreate: Date?

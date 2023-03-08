@@ -79,3 +79,4 @@
 --wraptypealiases preserve
 --xcodeindentation disabled
 --yodaswap always
+--swiftversion 5.7.2
