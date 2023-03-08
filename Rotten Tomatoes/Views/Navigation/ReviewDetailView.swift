@@ -94,9 +94,12 @@ struct ReviewDetailView: View {
         ForEach(filmReview.commentArray, id: \.self) { comment in
           VStack(alignment: .leading) {
             Text(comment.wrappedComment)
+              .debugBackground()
             Text(comment.wrappedCreateAt, style: .date)
+              .debugBackground()
               .padding(.top, 2)
           }
+          .debugBorder()
           .padding(.vertical)
         }
       }
@@ -162,6 +165,11 @@ struct ReviewDetailView_Previews: PreviewProvider {
     filmReview.genre = Genres.horror.rawValue
     filmReview.review = "Just don't watch the trailer"
     filmReview.rating = Int16(1)
+
+    let comment = Comment(context: moc)
+    comment.comment = "some comment"
+    comment.createAt = Date()
+    comment.origin = filmReview
 
     return ReviewDetailView(selectedReview: .constant(Optional(filmReview.objectID)))
       .environment(\.managedObjectContext, moc)

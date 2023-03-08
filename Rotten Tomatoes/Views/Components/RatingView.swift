@@ -37,7 +37,10 @@ struct RatingView: View {
           }
       }
     }
-    .print(maximumRating)
+    .debugAction {
+      assert(rating > 0, "Rating should be positive")
+    }
+    .debugPrint("Curent rating is \(rating)")
   }
 
   func image(for number: Int) -> Image {
