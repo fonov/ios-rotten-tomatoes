@@ -84,5 +84,165 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            uuid = "85FA519C-4EF6-43CC-BA4F-6E237921BF10"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "debugBorder"
+            moduleName = "">
+            <Locations>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            uuid = "30CDBDD8-1178-4FD9-B16B-5A4FBC75B008"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "toggle"
+            moduleName = "Rotten Tomatoes">
+            <Locations>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            uuid = "F06CEEBE-3278-48A8-8AAF-C52E03CF392E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "wrappedDirector"
+            moduleName = "">
+            <Locations>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            uuid = "23B6DD26-55AC-4D54-9855-C28A017184B2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "getImage"
+            moduleName = "Rotten Tomatoes">
+            <Locations>
+               <Location
+                  uuid = "23B6DD26-55AC-4D54-9855-C28A017184B2 - 8b86f3ec7824831e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Rotten_Tomatoes.Genres.getImage() -&gt; SwiftUI.Image"
+                  moduleName = "Rotten Tomatoes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fonov/Projects/ios/intermediate/Rotten%20Tomatoes/Rotten%20Tomatoes/Models/Genres.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            uuid = "C5C46329-1A9E-40EA-A11E-C830E1FFEC6B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "delete"
+            moduleName = "Rotten Tomatoes">
+            <Locations>
+               <Location
+                  uuid = "C5C46329-1A9E-40EA-A11E-C830E1FFEC6B - 98ef58f648d0308"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Rotten_Tomatoes.FetchList.delete(at: Foundation.IndexSet) -&gt; ()"
+                  moduleName = "Rotten Tomatoes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fonov/Projects/ios/intermediate/Rotten%20Tomatoes/Rotten%20Tomatoes/Views/Components/FetchList.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "288">
+               </Location>
+               <Location
+                  uuid = "C5C46329-1A9E-40EA-A11E-C830E1FFEC6B - 4e2c5ba3e4832abc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Rotten_Tomatoes.ReviewsSidebarView.delete(at: Foundation.IndexSet) -&gt; ()"
+                  moduleName = "Rotten Tomatoes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fonov/Projects/ios/intermediate/Rotten%20Tomatoes/Rotten%20Tomatoes/Views/Navigation/ReviewsSidebarView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "104"
+                  endingLineNumber = "104"
+                  offsetFromSymbolStart = "356">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            uuid = "F82F14FD-68DE-4852-A15C-C761957F77B7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "saveFilmReview"
+            moduleName = "Rotten Tomatoes">
+            <Locations>
+               <Location
+                  uuid = "F82F14FD-68DE-4852-A15C-C761957F77B7 - b3cd6b25cc572505"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Rotten_Tomatoes.AddReviewView.saveFilmReview() -&gt; ()"
+                  moduleName = "Rotten Tomatoes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fonov/Projects/ios/intermediate/Rotten%20Tomatoes/Rotten%20Tomatoes/Views/Navigation/AddReviewView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "160">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.RuntimeIssueBreakpoint">
+         <BreakpointContent
+            uuid = "E7CD701D-5A6F-41B7-8E84-582D429562D5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            breakpointStackSelectionBehavior = "1"
+            type = "4">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.RuntimeIssueBreakpoint">
+         <BreakpointContent
+            uuid = "54FB5725-BA64-4C75-8773-D8FEB3C6B291"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            breakpointStackSelectionBehavior = "1"
+            type = "65535">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
