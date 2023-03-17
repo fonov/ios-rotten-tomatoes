@@ -73,9 +73,11 @@ struct ReviewDetailView: View {
 
       Text(filmReview.wrappedReview)
         .padding()
+        .debugBorder()
 
       RatingView(rating: .constant(Int(filmReview.rating)))
         .padding()
+        .debugBorder()
 
       VStack(alignment: .leading) {
         TextField("Leave comment", text: $commentText)
@@ -94,12 +96,12 @@ struct ReviewDetailView: View {
         ForEach(filmReview.commentArray, id: \.self) { comment in
           VStack(alignment: .leading) {
             Text(comment.wrappedComment)
-              .debugBackground()
+//              .debugBackground()
             Text(comment.wrappedCreateAt, style: .date)
-              .debugBackground()
+//              .debugBackground()
+
               .padding(.top, 2)
           }
-          .debugBorder()
           .padding(.vertical)
         }
       }

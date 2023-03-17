@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A64B32EF29A3580A00910648"
-               BuildableName = "Rotten Tomatoes.app"
-               BlueprintName = "Rotten Tomatoes"
+               BuildableName = "RottenTomatoesReviews.app"
+               BlueprintName = "RottenTomatoesReviews"
                ReferencedContainer = "container:Rotten Tomatoes.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,8 +34,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A64B32FF29A3580C00910648"
-               BuildableName = "Rotten TomatoesTests.xctest"
-               BlueprintName = "Rotten TomatoesTests"
+               BuildableName = "RottenTomatoesReviewsTests.xctest"
+               BlueprintName = "RottenTomatoesReviewsTests"
                ReferencedContainer = "container:Rotten Tomatoes.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -45,8 +45,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A64B330929A3580C00910648"
-               BuildableName = "Rotten TomatoesUITests.xctest"
-               BlueprintName = "Rotten TomatoesUITests"
+               BuildableName = "RottenTomatoesReviewsUITests.xctest"
+               BlueprintName = "RottenTomatoesReviewsUITests"
                ReferencedContainer = "container:Rotten Tomatoes.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -68,8 +68,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A64B32EF29A3580A00910648"
-            BuildableName = "Rotten Tomatoes.app"
-            BlueprintName = "Rotten Tomatoes"
+            BuildableName = "RottenTomatoesReviews.app"
+            BlueprintName = "RottenTomatoesReviews"
             ReferencedContainer = "container:Rotten Tomatoes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -85,8 +85,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A64B32EF29A3580A00910648"
-            BuildableName = "Rotten Tomatoes.app"
-            BlueprintName = "Rotten Tomatoes"
+            BuildableName = "RottenTomatoesReviews.app"
+            BlueprintName = "RottenTomatoesReviews"
             ReferencedContainer = "container:Rotten Tomatoes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

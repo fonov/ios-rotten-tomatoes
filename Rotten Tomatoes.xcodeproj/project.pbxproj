@@ -60,14 +60,14 @@
 		A611435B29AB690600A9C304 /* FilmReview+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmReview+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A611435C29AB690600A9C304 /* FilmReview+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmReview+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A611436129AC774E00A9C304 /* FilmReviewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmReviewHelper.swift; sourceTree = "<group>"; };
-		A64B32F029A3580A00910648 /* Rotten Tomatoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rotten Tomatoes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A64B32F029A3580A00910648 /* RottenTomatoesReviews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RottenTomatoesReviews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A64B32F329A3580A00910648 /* RottenTomatoesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RottenTomatoesApp.swift; sourceTree = "<group>"; };
 		A64B32F529A3580A00910648 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A64B32F729A3580B00910648 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A64B32FA29A3580B00910648 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A64B330029A3580C00910648 /* Rotten TomatoesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rotten TomatoesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A64B330029A3580C00910648 /* RottenTomatoesReviewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RottenTomatoesReviewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A64B330429A3580C00910648 /* Rotten_TomatoesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotten_TomatoesTests.swift; sourceTree = "<group>"; };
-		A64B330A29A3580C00910648 /* Rotten TomatoesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rotten TomatoesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A64B330A29A3580C00910648 /* RottenTomatoesReviewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RottenTomatoesReviewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A64B330E29A3580C00910648 /* Rotten_TomatoesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotten_TomatoesUITests.swift; sourceTree = "<group>"; };
 		A64B331029A3580C00910648 /* Rotten_TomatoesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotten_TomatoesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A64B331E29A3587400910648 /* RottenTomatoes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RottenTomatoes.xcdatamodel; sourceTree = "<group>"; };
@@ -116,9 +116,9 @@
 		A64B32E729A3580A00910648 = {
 			isa = PBXGroup;
 			children = (
-				A64B32F229A3580A00910648 /* Rotten Tomatoes */,
-				A64B330329A3580C00910648 /* Rotten TomatoesTests */,
-				A64B330D29A3580C00910648 /* Rotten TomatoesUITests */,
+				A64B32F229A3580A00910648 /* RottenTomatoes */,
+				A64B330329A3580C00910648 /* RottenTomatoesTests */,
+				A64B330D29A3580C00910648 /* RottenTomatoesUITests */,
 				A64B32F129A3580A00910648 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -126,14 +126,14 @@
 		A64B32F129A3580A00910648 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A64B32F029A3580A00910648 /* Rotten Tomatoes.app */,
-				A64B330029A3580C00910648 /* Rotten TomatoesTests.xctest */,
-				A64B330A29A3580C00910648 /* Rotten TomatoesUITests.xctest */,
+				A64B32F029A3580A00910648 /* RottenTomatoesReviews.app */,
+				A64B330029A3580C00910648 /* RottenTomatoesReviewsTests.xctest */,
+				A64B330A29A3580C00910648 /* RottenTomatoesReviewsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A64B32F229A3580A00910648 /* Rotten Tomatoes */ = {
+		A64B32F229A3580A00910648 /* RottenTomatoes */ = {
 			isa = PBXGroup;
 			children = (
 				A60984A329B89C0C008098C8 /* Extensions */,
@@ -150,7 +150,7 @@
 				A64B331D29A3587400910648 /* RottenTomatoes.xcdatamodeld */,
 				A64B332029A3595D00910648 /* DataController.swift */,
 			);
-			path = "Rotten Tomatoes";
+			path = RottenTomatoes;
 			sourceTree = "<group>";
 		};
 		A64B32F929A3580B00910648 /* Preview Content */ = {
@@ -161,21 +161,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		A64B330329A3580C00910648 /* Rotten TomatoesTests */ = {
+		A64B330329A3580C00910648 /* RottenTomatoesTests */ = {
 			isa = PBXGroup;
 			children = (
 				A64B330429A3580C00910648 /* Rotten_TomatoesTests.swift */,
 			);
-			path = "Rotten TomatoesTests";
+			path = RottenTomatoesTests;
 			sourceTree = "<group>";
 		};
-		A64B330D29A3580C00910648 /* Rotten TomatoesUITests */ = {
+		A64B330D29A3580C00910648 /* RottenTomatoesUITests */ = {
 			isa = PBXGroup;
 			children = (
 				A64B330E29A3580C00910648 /* Rotten_TomatoesUITests.swift */,
 				A64B331029A3580C00910648 /* Rotten_TomatoesUITestsLaunchTests.swift */,
 			);
-			path = "Rotten TomatoesUITests";
+			path = RottenTomatoesUITests;
 			sourceTree = "<group>";
 		};
 		A64B332429A35CC700910648 /* Models */ = {
@@ -221,9 +221,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A64B32EF29A3580A00910648 /* Rotten Tomatoes */ = {
+		A64B32EF29A3580A00910648 /* RottenTomatoesReviews */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A64B331429A3580C00910648 /* Build configuration list for PBXNativeTarget "Rotten Tomatoes" */;
+			buildConfigurationList = A64B331429A3580C00910648 /* Build configuration list for PBXNativeTarget "RottenTomatoesReviews" */;
 			buildPhases = (
 				A64B32EC29A3580A00910648 /* Sources */,
 				A64B32ED29A3580A00910648 /* Frameworks */,
@@ -233,14 +233,14 @@
 			);
 			dependencies = (
 			);
-			name = "Rotten Tomatoes";
+			name = RottenTomatoesReviews;
 			productName = "Rotten Tomatoes";
-			productReference = A64B32F029A3580A00910648 /* Rotten Tomatoes.app */;
+			productReference = A64B32F029A3580A00910648 /* RottenTomatoesReviews.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A64B32FF29A3580C00910648 /* Rotten TomatoesTests */ = {
+		A64B32FF29A3580C00910648 /* RottenTomatoesReviewsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A64B331729A3580C00910648 /* Build configuration list for PBXNativeTarget "Rotten TomatoesTests" */;
+			buildConfigurationList = A64B331729A3580C00910648 /* Build configuration list for PBXNativeTarget "RottenTomatoesReviewsTests" */;
 			buildPhases = (
 				A64B32FC29A3580C00910648 /* Sources */,
 				A64B32FD29A3580C00910648 /* Frameworks */,
@@ -251,14 +251,14 @@
 			dependencies = (
 				A64B330229A3580C00910648 /* PBXTargetDependency */,
 			);
-			name = "Rotten TomatoesTests";
+			name = RottenTomatoesReviewsTests;
 			productName = "Rotten TomatoesTests";
-			productReference = A64B330029A3580C00910648 /* Rotten TomatoesTests.xctest */;
+			productReference = A64B330029A3580C00910648 /* RottenTomatoesReviewsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A64B330929A3580C00910648 /* Rotten TomatoesUITests */ = {
+		A64B330929A3580C00910648 /* RottenTomatoesReviewsUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A64B331A29A3580C00910648 /* Build configuration list for PBXNativeTarget "Rotten TomatoesUITests" */;
+			buildConfigurationList = A64B331A29A3580C00910648 /* Build configuration list for PBXNativeTarget "RottenTomatoesReviewsUITests" */;
 			buildPhases = (
 				A64B330629A3580C00910648 /* Sources */,
 				A64B330729A3580C00910648 /* Frameworks */,
@@ -269,9 +269,9 @@
 			dependencies = (
 				A64B330C29A3580C00910648 /* PBXTargetDependency */,
 			);
-			name = "Rotten TomatoesUITests";
+			name = RottenTomatoesReviewsUITests;
 			productName = "Rotten TomatoesUITests";
-			productReference = A64B330A29A3580C00910648 /* Rotten TomatoesUITests.xctest */;
+			productReference = A64B330A29A3580C00910648 /* RottenTomatoesReviewsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -310,9 +310,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A64B32EF29A3580A00910648 /* Rotten Tomatoes */,
-				A64B32FF29A3580C00910648 /* Rotten TomatoesTests */,
-				A64B330929A3580C00910648 /* Rotten TomatoesUITests */,
+				A64B32EF29A3580A00910648 /* RottenTomatoesReviews */,
+				A64B32FF29A3580C00910648 /* RottenTomatoesReviewsTests */,
+				A64B330929A3580C00910648 /* RottenTomatoesReviewsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -392,12 +392,12 @@
 /* Begin PBXTargetDependency section */
 		A64B330229A3580C00910648 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A64B32EF29A3580A00910648 /* Rotten Tomatoes */;
+			target = A64B32EF29A3580A00910648 /* RottenTomatoesReviews */;
 			targetProxy = A64B330129A3580C00910648 /* PBXContainerItemProxy */;
 		};
 		A64B330C29A3580C00910648 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A64B32EF29A3580A00910648 /* Rotten Tomatoes */;
+			target = A64B32EF29A3580A00910648 /* RottenTomatoesReviews */;
 			targetProxy = A64B330B29A3580C00910648 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -528,6 +528,7 @@
 				DEVELOPMENT_TEAM = CJ3K6UF4KJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Rotten Tomatoes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -557,6 +558,7 @@
 				DEVELOPMENT_TEAM = CJ3K6UF4KJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Rotten Tomatoes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -663,7 +665,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A64B331429A3580C00910648 /* Build configuration list for PBXNativeTarget "Rotten Tomatoes" */ = {
+		A64B331429A3580C00910648 /* Build configuration list for PBXNativeTarget "RottenTomatoesReviews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A64B331529A3580C00910648 /* Debug */,
@@ -672,7 +674,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A64B331729A3580C00910648 /* Build configuration list for PBXNativeTarget "Rotten TomatoesTests" */ = {
+		A64B331729A3580C00910648 /* Build configuration list for PBXNativeTarget "RottenTomatoesReviewsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A64B331829A3580C00910648 /* Debug */,
@@ -681,7 +683,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A64B331A29A3580C00910648 /* Build configuration list for PBXNativeTarget "Rotten TomatoesUITests" */ = {
+		A64B331A29A3580C00910648 /* Build configuration list for PBXNativeTarget "RottenTomatoesReviewsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A64B331B29A3580C00910648 /* Debug */,
