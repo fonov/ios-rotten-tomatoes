@@ -524,11 +524,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Rotten Tomatoes/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"RottenTomatoes/Preview Content\"";
 				DEVELOPMENT_TEAM = CJ3K6UF4KJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Rotten Tomatoes";
+				INFOPLIST_KEY_CFBundleDisplayName = RottenTomatoes;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -554,11 +554,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Rotten Tomatoes/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"RottenTomatoes/Preview Content\"";
 				DEVELOPMENT_TEAM = CJ3K6UF4KJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Rotten Tomatoes";
+				INFOPLIST_KEY_CFBundleDisplayName = RottenTomatoes;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
