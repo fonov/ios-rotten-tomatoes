@@ -78,6 +78,7 @@
 		A64B332E29A4A35400910648 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		A64B333029A4AA8600910648 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
 		A64B333229A4B00600910648 /* ReviewDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDetailView.swift; sourceTree = "<group>"; };
+		A6A4F96829C471D000A3F607 /* RottenTomatoesReviews-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "RottenTomatoesReviews-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +117,7 @@
 		A64B32E729A3580A00910648 = {
 			isa = PBXGroup;
 			children = (
+				A6A4F96829C471D000A3F607 /* RottenTomatoesReviews-Info.plist */,
 				A64B32F229A3580A00910648 /* RottenTomatoes */,
 				A64B330329A3580C00910648 /* RottenTomatoesTests */,
 				A64B330D29A3580C00910648 /* RottenTomatoesUITests */,
@@ -528,6 +530,7 @@
 				DEVELOPMENT_TEAM = CJ3K6UF4KJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RottenTomatoesReviews-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "R&T Reviews";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -558,6 +561,7 @@
 				DEVELOPMENT_TEAM = CJ3K6UF4KJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RottenTomatoesReviews-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "R&T Reviews";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
