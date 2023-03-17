@@ -71,7 +71,9 @@ struct ReviewsSidebarView: View {
             }
           }
 
+          #if DEBUG
           Button("Add samples", action: addSamples)
+          #endif
         } label: {
           Label("Sort", systemImage: "slider.horizontal.3")
         }
@@ -92,6 +94,7 @@ struct ReviewsSidebarView: View {
     }
   }
 
+  #if DEBUG
   func addSamples() {
     createFilmReviewSamples(moc)
 
@@ -99,6 +102,7 @@ struct ReviewsSidebarView: View {
       try? moc.save()
     }
   }
+  #endif
 
   func delete(at offset: IndexSet) {
     for index in offset {

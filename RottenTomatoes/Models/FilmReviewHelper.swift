@@ -7,6 +7,7 @@
 
 import CoreData
 
+#if DEBUG
 func createFilmReviewSamples(_ moc: NSManagedObjectContext) {
   let filmReview1 = FilmReview(context: moc)
 
@@ -64,3 +65,4 @@ func createFilmReviewSamples(_ moc: NSManagedObjectContext) {
   """
   filmReview5.rating = Int16(3)
 }
+#endif
