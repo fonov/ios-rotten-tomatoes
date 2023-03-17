@@ -30,7 +30,9 @@ struct ContentView_Previews: PreviewProvider {
   static let moc = DataController().container.viewContext
 
   static var previews: some View {
+    #if DEBUG
     createFilmReviewSamples(moc)
+    #endif
 
     return ContentView()
       .environment(\.managedObjectContext, moc)
