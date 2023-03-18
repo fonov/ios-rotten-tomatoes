@@ -82,6 +82,8 @@
 		A6A4F98B29C5DB5A00A3F607 /* ci_pre_xcodebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_pre_xcodebuild.sh; sourceTree = "<group>"; };
 		A6A4F9D329C5E11A00A3F607 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		A6A4F9D429C5E11A00A3F607 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		A6A4F9D529C5E43600A3F607 /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
+		A6A4F9D629C5E46400A3F607 /* ci_post_xcodebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_xcodebuild.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,8 @@
 			children = (
 				A6A4F98B29C5DB5A00A3F607 /* ci_pre_xcodebuild.sh */,
 				A6A4F9D229C5E11A00A3F607 /* AppIcon-Beta.appiconset */,
+				A6A4F9D529C5E43600A3F607 /* ci_post_clone.sh */,
+				A6A4F9D629C5E46400A3F607 /* ci_post_xcodebuild.sh */,
 			);
 			path = ci_scripts;
 			sourceTree = "<group>";
