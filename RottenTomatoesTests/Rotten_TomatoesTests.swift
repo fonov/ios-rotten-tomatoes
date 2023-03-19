@@ -5,7 +5,7 @@
 //  Created by Sergei Fonov on 20.02.23.
 //
 
-@testable import Rotten_Tomatoes
+@testable import RottenTomatoesReviews
 import XCTest
 
 final class Rotten_TomatoesTests: XCTestCase {

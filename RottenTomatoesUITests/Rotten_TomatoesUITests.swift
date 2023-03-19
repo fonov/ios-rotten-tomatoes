@@ -21,7 +21,7 @@ final class Rotten_TomatoesUITests: XCTestCase {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
   }
 
-  func testExample() throws {
+  func testFilmReview() throws {
     // UI tests must launch the application that they test.
     let app = XCUIApplication()
     setupSnapshot(app)
@@ -30,6 +30,25 @@ final class Rotten_TomatoesUITests: XCTestCase {
     // Use XCTAssert and related functions to verify your tests produce the correct results.
 
     snapshot("0Launch")
+
+//    app.navigationBars["Rotten Tomatoes"]/*@START_MENU_TOKEN@*/.buttons["Sort"]/*[[".otherElements[\"Sort\"].buttons[\"Sort\"]",".buttons[\"Sort\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+//
+//    snapshot("Menu")
+
+    app.navigationBars["Rotten Tomatoes"]/*@START_MENU_TOKEN@*/.buttons["Plus"]/*[[".otherElements[\"Plus\"].buttons[\"Plus\"]",".buttons[\"Plus\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+//    app.collectionViews/*@START_MENU_TOKEN@*/.staticTexts["Action"]/*[[".cells",".buttons[\"Genre, Action\"].staticTexts[\"Action\"]",".staticTexts[\"Action\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+
+    snapshot("Adding_film_review")
+
+    let collectionViewsQuery = app.collectionViews
+    let element = collectionViewsQuery.children(matching: .cell).element(boundBy: 5).children(matching: .other).element(boundBy: 1).children(matching: .other).element
+    element.children(matching: .other).element.children(matching: .image).matching(identifier: "tomato").element(boundBy: 2).tap()
+
+    snapshot("Set_rating")
+
+    collectionViewsQuery/*@START_MENU_TOKEN@*/.buttons["Update"]/*[[".cells.buttons[\"Update\"]",".buttons[\"Update\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+
+    snapshot("Film_review_list")
   }
 
   func testLaunchPerformance() throws {
