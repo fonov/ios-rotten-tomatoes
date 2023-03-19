@@ -31,6 +31,7 @@
 		A64B332F29A4A35400910648 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B332E29A4A35400910648 /* RatingView.swift */; };
 		A64B333129A4AA8600910648 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B333029A4AA8600910648 /* EmojiRatingView.swift */; };
 		A64B333329A4B00600910648 /* ReviewDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B333229A4B00600910648 /* ReviewDetailView.swift */; };
+		A6A4F9DC29C7443000A3F607 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A4F9D929C7442C00A3F607 /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,10 @@
 		A6A4F9D429C5E11A00A3F607 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		A6A4F9D529C5E43600A3F607 /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
 		A6A4F9D629C5E46400A3F607 /* ci_post_xcodebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_xcodebuild.sh; sourceTree = "<group>"; };
+		A6A4F9D829C7442C00A3F607 /* Appfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
+		A6A4F9D929C7442C00A3F607 /* SnapshotHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		A6A4F9DA29C7442C00A3F607 /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
+		A6A4F9DB29C7442C00A3F607 /* Snapfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Snapfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +129,7 @@
 			children = (
 				A6A4F98A29C5DB0E00A3F607 /* ci_scripts */,
 				A6A4F96829C471D000A3F607 /* RottenTomatoesReviews-Info.plist */,
+				A6A4F9D729C7442C00A3F607 /* fastlane */,
 				A64B32F229A3580A00910648 /* RottenTomatoes */,
 				A64B330329A3580C00910648 /* RottenTomatoesTests */,
 				A64B330D29A3580C00910648 /* RottenTomatoesUITests */,
@@ -223,6 +229,17 @@
 				A6A4F9D429C5E11A00A3F607 /* Contents.json */,
 			);
 			path = "AppIcon-Beta.appiconset";
+			sourceTree = "<group>";
+		};
+		A6A4F9D729C7442C00A3F607 /* fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				A6A4F9D829C7442C00A3F607 /* Appfile */,
+				A6A4F9D929C7442C00A3F607 /* SnapshotHelper.swift */,
+				A6A4F9DA29C7442C00A3F607 /* Fastfile */,
+				A6A4F9DB29C7442C00A3F607 /* Snapfile */,
+			);
+			path = fastlane;
 			sourceTree = "<group>";
 		};
 		A6F5832C29A5462900355A65 /* Navigation */ = {
@@ -412,6 +429,7 @@
 			files = (
 				A64B331129A3580C00910648 /* Rotten_TomatoesUITestsLaunchTests.swift in Sources */,
 				A64B330F29A3580C00910648 /* Rotten_TomatoesUITests.swift in Sources */,
+				A6A4F9DC29C7443000A3F607 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
