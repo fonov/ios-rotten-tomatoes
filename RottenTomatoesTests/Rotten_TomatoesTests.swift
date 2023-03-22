@@ -7,6 +7,7 @@
 
 @testable import RottenTomatoesReviews
 import XCTest
+import Nimble
 
 final class Rotten_TomatoesTests: XCTestCase {
   override func setUpWithError() throws {
@@ -30,5 +31,15 @@ final class Rotten_TomatoesTests: XCTestCase {
     measure {
       // Put the code you want to measure the time of here.
     }
+  }
+
+  func testNimbleCase1() {
+    let squawk = "Squee!"
+    expect(squawk).to(equal("Squee!"))
+  }
+
+  func testNimbleCase2() {
+    let greeting = "Hi!"
+    expect(greeting).toNot(equal("Oh, hello there!"))
   }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BB4AA22796ED788ABD32D04 /* Pods_RottenTomatoesReviewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E11B35C416D544CD3583BD5 /* Pods_RottenTomatoesReviewsTests.framework */; };
+		7120A51ED7247900B50A3866 /* Pods_RottenTomatoesReviews_RottenTomatoesReviewsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF71FDEFAA04ECAFB14F526 /* Pods_RottenTomatoesReviews_RottenTomatoesReviewsUITests.framework */; };
 		A60984A529B89C1D008098C8 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60984A429B89C1D008098C8 /* View.swift */; };
 		A611434729AA14B700A9C304 /* FetchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611434629AA14B700A9C304 /* FetchList.swift */; };
 		A611434929AA1D0E00A9C304 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611434829AA1D0E00A9C304 /* SearchBar.swift */; };
@@ -32,6 +34,7 @@
 		A64B333129A4AA8600910648 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B333029A4AA8600910648 /* EmojiRatingView.swift */; };
 		A64B333329A4B00600910648 /* ReviewDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B333229A4B00600910648 /* ReviewDetailView.swift */; };
 		A6A4F9DC29C7443000A3F607 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A4F9D929C7442C00A3F607 /* SnapshotHelper.swift */; };
+		A7AE5DF37FB4502B9C6895D5 /* Pods_RottenTomatoesReviews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2483C7C3644EBB31F40E024 /* Pods_RottenTomatoesReviews.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		062D7D67A3723F5BD81A1FC6 /* Pods-RottenTomatoesReviews-RottenTomatoesReviewsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RottenTomatoesReviews-RottenTomatoesReviewsUITests.release.xcconfig"; path = "Target Support Files/Pods-RottenTomatoesReviews-RottenTomatoesReviewsUITests/Pods-RottenTomatoesReviews-RottenTomatoesReviewsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0CF71FDEFAA04ECAFB14F526 /* Pods_RottenTomatoesReviews_RottenTomatoesReviewsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RottenTomatoesReviews_RottenTomatoesReviewsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83909EDF5DA93C9CD047ACD3 /* Pods-RottenTomatoesReviewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RottenTomatoesReviewsTests.debug.xcconfig"; path = "Target Support Files/Pods-RottenTomatoesReviewsTests/Pods-RottenTomatoesReviewsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E11B35C416D544CD3583BD5 /* Pods_RottenTomatoesReviewsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RottenTomatoesReviewsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A60984A429B89C1D008098C8 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		A611434629AA14B700A9C304 /* FetchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchList.swift; sourceTree = "<group>"; };
 		A611434829AA1D0E00A9C304 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
@@ -89,6 +96,11 @@
 		A6A4F9D929C7442C00A3F607 /* SnapshotHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		A6A4F9DA29C7442C00A3F607 /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
 		A6A4F9DB29C7442C00A3F607 /* Snapfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Snapfile; sourceTree = "<group>"; };
+		B7261B41DA5EE03B66E40303 /* Pods-RottenTomatoesReviews-RottenTomatoesReviewsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RottenTomatoesReviews-RottenTomatoesReviewsUITests.debug.xcconfig"; path = "Target Support Files/Pods-RottenTomatoesReviews-RottenTomatoesReviewsUITests/Pods-RottenTomatoesReviews-RottenTomatoesReviewsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B9B5382961442E82BEA3F0B4 /* Pods-RottenTomatoesReviews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RottenTomatoesReviews.debug.xcconfig"; path = "Target Support Files/Pods-RottenTomatoesReviews/Pods-RottenTomatoesReviews.debug.xcconfig"; sourceTree = "<group>"; };
+		BD770FFC631D3383E50F83CB /* Pods-RottenTomatoesReviews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RottenTomatoesReviews.release.xcconfig"; path = "Target Support Files/Pods-RottenTomatoesReviews/Pods-RottenTomatoesReviews.release.xcconfig"; sourceTree = "<group>"; };
+		D2483C7C3644EBB31F40E024 /* Pods_RottenTomatoesReviews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RottenTomatoesReviews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6095D84D432A054BE5A4242 /* Pods-RottenTomatoesReviewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RottenTomatoesReviewsTests.release.xcconfig"; path = "Target Support Files/Pods-RottenTomatoesReviewsTests/Pods-RottenTomatoesReviewsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7AE5DF37FB4502B9C6895D5 /* Pods_RottenTomatoesReviews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BB4AA22796ED788ABD32D04 /* Pods_RottenTomatoesReviewsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,12 +124,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7120A51ED7247900B50A3866 /* Pods_RottenTomatoesReviews_RottenTomatoesReviewsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4031C1FF3EFE50E2C1F05FA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9B5382961442E82BEA3F0B4 /* Pods-RottenTomatoesReviews.debug.xcconfig */,
+				BD770FFC631D3383E50F83CB /* Pods-RottenTomatoesReviews.release.xcconfig */,
+				B7261B41DA5EE03B66E40303 /* Pods-RottenTomatoesReviews-RottenTomatoesReviewsUITests.debug.xcconfig */,
+				062D7D67A3723F5BD81A1FC6 /* Pods-RottenTomatoesReviews-RottenTomatoesReviewsUITests.release.xcconfig */,
+				83909EDF5DA93C9CD047ACD3 /* Pods-RottenTomatoesReviewsTests.debug.xcconfig */,
+				F6095D84D432A054BE5A4242 /* Pods-RottenTomatoesReviewsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		57E22724807D99EBEE09BC50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2483C7C3644EBB31F40E024 /* Pods_RottenTomatoesReviews.framework */,
+				0CF71FDEFAA04ECAFB14F526 /* Pods_RottenTomatoesReviews_RottenTomatoesReviewsUITests.framework */,
+				8E11B35C416D544CD3583BD5 /* Pods_RottenTomatoesReviewsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A60984A329B89C0C008098C8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +172,8 @@
 				A64B330329A3580C00910648 /* RottenTomatoesTests */,
 				A64B330D29A3580C00910648 /* RottenTomatoesUITests */,
 				A64B32F129A3580A00910648 /* Products */,
+				4031C1FF3EFE50E2C1F05FA1 /* Pods */,
+				57E22724807D99EBEE09BC50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -270,6 +310,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A64B331429A3580C00910648 /* Build configuration list for PBXNativeTarget "RottenTomatoesReviews" */;
 			buildPhases = (
+				13D7D4B0FDE166968AC6C6C9 /* [CP] Check Pods Manifest.lock */,
 				A64B32EC29A3580A00910648 /* Sources */,
 				A64B32ED29A3580A00910648 /* Frameworks */,
 				A64B32EE29A3580A00910648 /* Resources */,
@@ -287,9 +328,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A64B331729A3580C00910648 /* Build configuration list for PBXNativeTarget "RottenTomatoesReviewsTests" */;
 			buildPhases = (
+				A24E19189C8032CFDF826C95 /* [CP] Check Pods Manifest.lock */,
 				A64B32FC29A3580C00910648 /* Sources */,
 				A64B32FD29A3580C00910648 /* Frameworks */,
 				A64B32FE29A3580C00910648 /* Resources */,
+				E16031A8F5FEFC59CBD65781 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -305,6 +348,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A64B331A29A3580C00910648 /* Build configuration list for PBXNativeTarget "RottenTomatoesReviewsUITests" */;
 			buildPhases = (
+				72F17CD57F840998B2936851 /* [CP] Check Pods Manifest.lock */,
 				A64B330629A3580C00910648 /* Sources */,
 				A64B330729A3580C00910648 /* Frameworks */,
 				A64B330829A3580C00910648 /* Resources */,
@@ -387,6 +431,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13D7D4B0FDE166968AC6C6C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RottenTomatoesReviews-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72F17CD57F840998B2936851 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RottenTomatoesReviews-RottenTomatoesReviewsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A24E19189C8032CFDF826C95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RottenTomatoesReviewsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E16031A8F5FEFC59CBD65781 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RottenTomatoesReviewsTests/Pods-RottenTomatoesReviewsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RottenTomatoesReviewsTests/Pods-RottenTomatoesReviewsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RottenTomatoesReviewsTests/Pods-RottenTomatoesReviewsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A64B32EC29A3580A00910648 /* Sources */ = {
@@ -565,6 +695,7 @@
 		};
 		A64B331529A3580C00910648 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9B5382961442E82BEA3F0B4 /* Pods-RottenTomatoesReviews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -596,6 +727,7 @@
 		};
 		A64B331629A3580C00910648 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD770FFC631D3383E50F83CB /* Pods-RottenTomatoesReviews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -627,8 +759,8 @@
 		};
 		A64B331829A3580C00910648 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83909EDF5DA93C9CD047ACD3 /* Pods-RottenTomatoesReviewsTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -647,8 +779,8 @@
 		};
 		A64B331929A3580C00910648 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6095D84D432A054BE5A4242 /* Pods-RottenTomatoesReviewsTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -667,6 +799,7 @@
 		};
 		A64B331B29A3580C00910648 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7261B41DA5EE03B66E40303 /* Pods-RottenTomatoesReviews-RottenTomatoesReviewsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -686,6 +819,7 @@
 		};
 		A64B331C29A3580C00910648 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 062D7D67A3723F5BD81A1FC6 /* Pods-RottenTomatoesReviews-RottenTomatoesReviewsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
