@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dateCreate</key>
+	<date>1970-01-18T08:40:00Z</date>
+	<key>director</key>
+	<string>Jessica M. Thompson</string>
+	<key>genre</key>
+	<string>Horror</string>
+	<key>rating</key>
+	<integer>1</integer>
+	<key>review</key>
+	<string>Just don't watch the trailer</string>
+	<key>title</key>
+	<string>THE INVITATION</string>
+</dict>
+</plist>

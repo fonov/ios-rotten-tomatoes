@@ -41,7 +41,11 @@ class SnapshotDemoTests: XCTestCase {
 
     let view = ContentView()
       .environment(\.managedObjectContext, moc)
+
     assertSnapshot(matching: view.toVC(), as: .image)
+
+    let traitDarkMode = UITraitCollection(userInterfaceStyle: .dark)
+    assertSnapshot(matching: view.toVC(), as: .image(on: .iPhone12, traits: traitDarkMode))
   }
 
   func testReviewDetailView() {
@@ -72,6 +76,37 @@ class SnapshotDemoTests: XCTestCase {
     }
     assertSnapshot(matching: view.toVC(), as: .image)
   }
+
+  func testRatingViewSet2() {
+    let view = RatingView(rating: .constant(4))
+    assertSnapshot(matching: view.toVC(), as: .recursiveDescription)
+    assertSnapshot(matching: view.toVC(), as: .image(on: .iPhone13Mini(.landscape)))
+    assertSnapshot(matching: view.toVC(), as: .recursiveDescription(on: .iPhone13Mini(.landscape)))
+  }
+
+  func testUrlRequest() {
+    let url = URL(string: "https://jsonplaceholder.typicode.com/todos/1")!
+    var request = URLRequest(url: url)
+    request.httpMethod = "POST"
+    request.addValue("Fonov Sergei", forHTTPHeaderField: "X-MY-NAME")
+    request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+
+    assertSnapshot(matching: request, as: .raw)
+  }
+
+  func testFilmReview() {
+    var filmReview = FilmReviewStruct()
+    filmReview.dateCreate = Date(timeIntervalSince1970: 1500000)
+    filmReview.title = "THE INVITATION"
+    filmReview.director = "Jessica M. Thompson"
+    filmReview.genre = Genres.horror.rawValue
+    filmReview.review = "Just don't watch the trailer"
+    filmReview.rating = Int16(1)
+
+    assertSnapshot(matching: filmReview, as: .json)
+    assertSnapshot(matching: filmReview, as: .plist)
+    assertSnapshot(matching: filmReview, as: .dump)
+  }
 }
 
 extension SwiftUI.View {
@@ -80,4 +115,14 @@ extension SwiftUI.View {
     vc.view.frame = UIScreen.main.bounds
     return vc
   }
+}
+
+struct FilmReviewStruct: Codable {
+  var dateCreate: Date?
+  var director: String?
+  var genre: String?
+  var id: UUID?
+  var rating: Int16?
+  var review: String?
+  var title: String?
 }

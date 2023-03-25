@@ -1,0 +1,6 @@
+<_TtGC7SwiftUI14_UIHostingViewV21RottenTomatoesReviews10RatingView_; frame = (0 0; 812 375); autoresize = W+H; gestureRecognizers = <NSArray>; backgroundColor = <UIDynamicSystemColor; name = systemBackgroundColor>; layer = <CALayer>>
+   | <SwiftUI._UIGraphicsView; frame = (50 109; 136 136); anchorPoint = (0, 0); autoresizesSubviews = NO; layer = <SwiftUI.ImageLayer>>
+   | <SwiftUI._UIGraphicsView; frame = (194 109; 136 136); anchorPoint = (0, 0); autoresizesSubviews = NO; layer = <SwiftUI.ImageLayer>>
+   | <SwiftUI._UIGraphicsView; frame = (338 109; 136 136); anchorPoint = (0, 0); autoresizesSubviews = NO; layer = <SwiftUI.ImageLayer>>
+   | <SwiftUI._UIGraphicsView; frame = (482 109; 136 136); anchorPoint = (0, 0); autoresizesSubviews = NO; layer = <SwiftUI.ImageLayer>>
+   | <SwiftUI._UIGraphicsView; frame = (626 109; 136 136); anchorPoint = (0, 0); autoresizesSubviews = NO; layer = <SwiftUI.ImageLayer>>

@@ -1,0 +1,14 @@
+▿ FilmReviewStruct
+  ▿ dateCreate: Optional<Date>
+    - some: 1970-01-18T08:40:00Z
+  ▿ director: Optional<String>
+    - some: "Jessica M. Thompson"
+  ▿ genre: Optional<String>
+    - some: "Horror"
+  - id: Optional<UUID>.none
+  ▿ rating: Optional<Int16>
+    - some: 1
+  ▿ review: Optional<String>
+    - some: "Just don\'t watch the trailer"
+  ▿ title: Optional<String>
+    - some: "THE INVITATION"
