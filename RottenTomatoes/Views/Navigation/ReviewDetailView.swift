@@ -161,7 +161,7 @@ struct ReviewDetailView_Previews: PreviewProvider {
 
   static var previews: some View {
     let filmReview = FilmReview(context: moc)
-    filmReview.dateCreate = Date()
+    filmReview.dateCreate = Date(timeIntervalSince1970: 16e8)
     filmReview.title = "THE INVITATION"
     filmReview.director = "Jessica M. Thompson"
     filmReview.genre = Genres.horror.rawValue

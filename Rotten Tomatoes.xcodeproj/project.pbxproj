@@ -35,6 +35,8 @@
 		A64B333329A4B00600910648 /* ReviewDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B333229A4B00600910648 /* ReviewDetailView.swift */; };
 		A6A4F9DC29C7443000A3F607 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A4F9D929C7442C00A3F607 /* SnapshotHelper.swift */; };
 		A6D4F58029CC3EC400D99347 /* Nimble.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D4F57F29CC3EC400D99347 /* Nimble.swift */; };
+		A6D4F58829CEDD1F00D99347 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = A6D4F58729CEDD1F00D99347 /* SnapshotTesting */; };
+		A6D4F58A29CEDD4400D99347 /* SnapshotTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D4F58929CEDD4400D99347 /* SnapshotTesting.swift */; };
 		A7AE5DF37FB4502B9C6895D5 /* Pods_RottenTomatoesReviews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2483C7C3644EBB31F40E024 /* Pods_RottenTomatoesReviews.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +100,7 @@
 		A6A4F9DA29C7442C00A3F607 /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
 		A6A4F9DB29C7442C00A3F607 /* Snapfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Snapfile; sourceTree = "<group>"; };
 		A6D4F57F29CC3EC400D99347 /* Nimble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nimble.swift; sourceTree = "<group>"; };
+		A6D4F58929CEDD4400D99347 /* SnapshotTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTesting.swift; sourceTree = "<group>"; };
 		B7261B41DA5EE03B66E40303 /* Pods-RottenTomatoesReviews-RottenTomatoesReviewsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RottenTomatoesReviews-RottenTomatoesReviewsUITests.debug.xcconfig"; path = "Target Support Files/Pods-RottenTomatoesReviews-RottenTomatoesReviewsUITests/Pods-RottenTomatoesReviews-RottenTomatoesReviewsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B9B5382961442E82BEA3F0B4 /* Pods-RottenTomatoesReviews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RottenTomatoesReviews.debug.xcconfig"; path = "Target Support Files/Pods-RottenTomatoesReviews/Pods-RottenTomatoesReviews.debug.xcconfig"; sourceTree = "<group>"; };
 		BD770FFC631D3383E50F83CB /* Pods-RottenTomatoesReviews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RottenTomatoesReviews.release.xcconfig"; path = "Target Support Files/Pods-RottenTomatoesReviews/Pods-RottenTomatoesReviews.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +122,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BB4AA22796ED788ABD32D04 /* Pods_RottenTomatoesReviewsTests.framework in Frameworks */,
+				A6D4F58829CEDD1F00D99347 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +226,7 @@
 			children = (
 				A64B330429A3580C00910648 /* Rotten_TomatoesTests.swift */,
 				A6D4F57F29CC3EC400D99347 /* Nimble.swift */,
+				A6D4F58929CEDD4400D99347 /* SnapshotTesting.swift */,
 			);
 			path = RottenTomatoesTests;
 			sourceTree = "<group>";
@@ -343,6 +348,9 @@
 				A64B330229A3580C00910648 /* PBXTargetDependency */,
 			);
 			name = RottenTomatoesReviewsTests;
+			packageProductDependencies = (
+				A6D4F58729CEDD1F00D99347 /* SnapshotTesting */,
+			);
 			productName = "Rotten TomatoesTests";
 			productReference = A64B330029A3580C00910648 /* RottenTomatoesReviewsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -398,6 +406,9 @@
 				Base,
 			);
 			mainGroup = A64B32E729A3580A00910648;
+			packageReferences = (
+				A6D4F58629CEDD1F00D99347 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			productRefGroup = A64B32F129A3580A00910648 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -554,6 +565,7 @@
 			files = (
 				A6D4F58029CC3EC400D99347 /* Nimble.swift in Sources */,
 				A64B330529A3580C00910648 /* Rotten_TomatoesTests.swift in Sources */,
+				A6D4F58A29CEDD4400D99347 /* SnapshotTesting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -881,6 +893,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A6D4F58629CEDD1F00D99347 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A6D4F58729CEDD1F00D99347 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6D4F58629CEDD1F00D99347 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		A64B331D29A3587400910648 /* RottenTomatoes.xcdatamodeld */ = {

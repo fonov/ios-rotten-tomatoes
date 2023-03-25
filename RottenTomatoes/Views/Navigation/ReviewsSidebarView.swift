@@ -116,7 +116,7 @@ struct ReviewsSidebarView: View {
   }
 }
 
-struct Reviews_Previews: PreviewProvider {
+struct ReviewsSidebarView_Previews: PreviewProvider {
   static let moc = DataController().container.viewContext
 
   static var previews: some View {
