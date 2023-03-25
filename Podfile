@@ -10,6 +10,7 @@ target 'RottenTomatoesReviews' do
   target 'RottenTomatoesReviewsTests' do
     inherit! :search_paths
     
+    pod 'Quick'
     pod 'Nimble'
   end
 
